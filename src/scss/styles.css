@@ -1,9 +1,11 @@
 .main_page {
   margin: 0;
 }
+
 .main_page--header {
   min-height: 85px;
 }
+
 .main_page--title {
   margin: 0;
 }
@@ -11,13 +13,10 @@
 .bg_wrapper-dark_theme {
   background-color: #131313;
 }
-.bg_wrapper-contacts_bg_image {
-  position: relative;
-  background-color: #131313;
-}
 
 .centralizer {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 87.5%;
   margin: 0 auto;
   padding: 0 10px;
@@ -33,61 +32,32 @@
   min-height: 705px;
   outline: 1px solid magenta;
 }
+
 .main--portfolio {
   min-height: 1075px;
   outline: 1px solid magenta;
 }
+
 .main--online_control_feature {
   position: relative;
   min-height: 760px;
 }
+
 .main--repair_types_feature {
   min-height: 830px;
 }
+
 .main--measurements_feature {
   min-height: 875px;
 }
+
 .main--repair_styles_feature {
   min-height: 1015px;
-}
-.main--design_feature {
-  min-height: 580px;
-}
-.main--about_us {
-  min-height: 1615px;
-}
-.main--team {
-  position: relative;
-  top: -410px;
-  min-height: 930px;
-}
-.main--clients {
-  position: relative;
-  top: -410px;
-  min-height: 595px;
-}
-.main--feed_back {
-  position: absolute;
-  top: -225px;
-  left: 0;
-  right: 0;
-}
-.main--contacts {
-  min-height: 950px;
-  outline: 1px solid magenta;
-}
-.main--footer {
-  min-height: 133px;
-  outline: 1px solid magenta;
-}
-
-.presentation {
-  background-image: url(images/75e380ca9814f061c481e46ff4ebac93.png);
 }
 
 .online_control_feature--overlay_wrapper {
   position: absolute;
-  top: -325px;
+  top: -324px;
   left: 0;
   right: 0;
   width: 64.8412%;
@@ -97,13 +67,4 @@
   color: green;
   outline: 1px solid magenta;
 }
-
-.feed_back--form {
-  width: 70.238%;
-  min-height: 445px;
-  margin: 0 auto;
-  outline: 1px solid green;
-}
-.feed_back--form-black_bg {
-  background-color: #000000;
-}
+/*# sourceMappingURL=styles.css.map */

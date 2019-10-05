@@ -14,3 +14,6 @@ Install:
 
 1. MiniCssExtractPlugin
     * npm i mini-css-extract-plugin
+
+1. file-loader
+    * npm i file-loader

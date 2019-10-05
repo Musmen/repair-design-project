@@ -1,9 +1,153 @@
-div {
-  color: blue;
+$bg_color-dark_theme: #131313;
+$bg_color-black: #000000;
 
-  &:hover {
-    color: magenta;
+.main_page {
+  margin: 0;
+  
+  &--header {
+    min-height: 85px;
+  }
+
+  &--title {
+    margin: 0;
+  }
+}
+
+.bg_wrapper {
+
+  &-dark_theme {
+    background-color: $bg_color-dark_theme;
+  }
+
+  &-contacts_bg_image { // todo: bg-image
+    position: relative;
+
+    background-color: $bg_color-dark_theme;
+  }
+}
+
+.centralizer {
+  box-sizing: border-box;
+  width: 87.5%; //1260px
+  margin: 0 auto;
+  padding: 0 10px;
+
+  outline: 1px solid magenta;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main {
     
-    cursor: pointer;
+  &--presentation {
+    min-height: 705px;
+    
+    outline: 1px solid magenta;
+  }
+  
+  &--portfolio {
+    min-height: 1075px;
+
+    outline: 1px solid magenta;
+  }
+
+  &--online_control_feature {
+    position: relative;
+    
+    min-height: 760px;
+  }
+
+  &--repair_types_feature {
+    min-height: 830px;
+  }
+
+  &--measurements_feature {
+    min-height: 875px;
+  }
+
+  &--repair_styles_feature {
+    min-height: 1015px;
+  }
+
+  &--design_feature {
+    min-height: 580px;
+  }
+
+  &--about_us {
+    min-height: 1615px;
+  }
+
+  &--team {
+    position: relative;
+    top: -410px;
+
+    min-height: 930px;
+  }
+
+  &--clients {
+    position: relative;
+    top: -410px;
+
+    min-height: 595px;
+  }
+
+  &--feed_back {
+    position: absolute;
+    top: - 225px;
+    left: 0;
+    right: 0;
+  }
+
+  &--contacts {
+    min-height: 950px;
+
+    outline: 1px solid magenta;
+  }
+
+  &--footer {
+    min-height: 133px;
+
+    outline: 1px solid magenta;
+  }
+}
+
+.presentation {
+  background-image: url('../assets/img/bg-features.png');
+}
+
+.online_control_feature {
+
+  &--overlay_wrapper {
+    position: absolute;
+    top: -325px;
+    left: 0;
+    right: 0;
+    
+    width: 64.8412%; //817px
+    min-height: 530px;
+    margin: 0 auto;
+
+    text-align: center;
+    color: green;
+
+    outline: 1px solid magenta;
+  }
+}
+
+.feed_back {
+
+  &--form {
+    width: 70.238%; //885px
+    min-height: 445px;
+    margin: 0 auto;
+
+    outline: 1px solid green;
+    
+    &-black_bg {
+      background-color: $bg_color-black;
+    }
   }
 }
