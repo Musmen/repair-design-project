@@ -1,0 +1,9 @@
+div {
+  color: blue;
+
+  &:hover {
+    color: magenta;
+    
+    cursor: pointer;
+  }
+}
