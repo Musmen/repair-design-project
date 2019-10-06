@@ -1,19 +1,44 @@
 .main_page {
   margin: 0;
+  color: red;
 }
 .main_page--header {
   min-height: 85px;
 }
+@media only screen and (max-width: 600px) {
+  .main_page--header {
+    min-height: 57px;
+  }
+}
 .main_page--title {
   margin: 0;
+}
+.main_page--footer {
+  min-height: 133px;
+  outline: 1px solid magenta;
 }
 
 .bg_wrapper-dark_theme {
   background-color: #131313;
 }
+@media only screen and (max-width: 600px) {
+  .bg_wrapper-dark_theme {
+    background-color: #252525;
+  }
+}
 .bg_wrapper-contacts_bg_image {
   position: relative;
   background-color: #131313;
+}
+@media only screen and (max-width: 600px) {
+  .bg_wrapper-styles_bg_image {
+    position: relative;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .bg_wrapper-mobile_dark_theme {
+    background-color: #252525;
+  }
 }
 
 .centralizer {
@@ -23,26 +48,66 @@
   padding: 0 10px;
   outline: 1px solid magenta;
 }
+@media only screen and (max-width: 600px) {
+  .centralizer {
+    width: 375px;
+    padding: 0 17px 0 18px;
+  }
+}
 
 .link {
   text-decoration: none;
   color: inherit;
 }
 
+@media only screen and (max-width: 600px) {
+  .mobile_hidden {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .desktop_hidden {
+    display: none;
+  }
+}
+
 .main--presentation {
   min-height: 705px;
   outline: 1px solid magenta;
+}
+@media only screen and (max-width: 600px) {
+  .main--presentation {
+    min-height: 476px;
+  }
 }
 .main--portfolio {
   min-height: 1075px;
   outline: 1px solid magenta;
 }
+@media only screen and (max-width: 600px) {
+  .main--portfolio {
+    min-height: 730px;
+  }
+}
 .main--online_control_feature {
   position: relative;
   min-height: 760px;
 }
+@media only screen and (max-width: 600px) {
+  .main--online_control_feature {
+    position: static;
+    min-height: 825px;
+    background-color: #252525;
+  }
+}
 .main--repair_types_feature {
   min-height: 830px;
+}
+@media only screen and (max-width: 600px) {
+  .main--repair_types_feature {
+    min-height: 2030px;
+  }
 }
 .main--measurements_feature {
   min-height: 875px;
@@ -50,8 +115,24 @@
 .main--repair_styles_feature {
   min-height: 1015px;
 }
+@media only screen and (max-width: 600px) {
+  .main--repair_styles_feature {
+    position: absolute;
+    top: -220px;
+    right: 0;
+    left: 0;
+    min-height: 340px;
+  }
+}
 .main--design_feature {
   min-height: 580px;
+}
+@media only screen and (max-width: 600px) {
+  .main--design_feature {
+    box-sizing: border-box;
+    min-height: 1960px;
+    padding-top: 120px;
+  }
 }
 .main--about_us {
   min-height: 1615px;
@@ -60,6 +141,13 @@
   position: relative;
   top: -410px;
   min-height: 930px;
+}
+@media only screen and (max-width: 600px) {
+  .main--team {
+    position: static;
+    box-sizing: border-box;
+    min-height: 1710px;
+  }
 }
 .main--clients {
   position: relative;
@@ -72,13 +160,20 @@
   left: 0;
   right: 0;
 }
+@media only screen and (max-width: 600px) {
+  .main--feed_back {
+    position: static;
+    min-height: 520px;
+  }
+}
 .main--contacts {
   min-height: 950px;
   outline: 1px solid magenta;
 }
-.main--footer {
-  min-height: 133px;
-  outline: 1px solid magenta;
+@media only screen and (max-width: 600px) {
+  .main--contacts {
+    min-height: 490px;
+  }
 }
 
 .presentation {
@@ -97,6 +192,13 @@
   color: green;
   outline: 1px solid magenta;
 }
+@media only screen and (max-width: 600px) {
+  .online_control_feature--overlay_wrapper {
+    position: static;
+    width: 100%;
+    min-height: 345px;
+  }
+}
 
 .feed_back--form {
   width: 70.238%;
@@ -106,4 +208,15 @@
 }
 .feed_back--form-black_bg {
   background-color: #000000;
+}
+@media only screen and (max-width: 600px) {
+  .feed_back--form-black_bg {
+    background-color: #252525;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .feed_back--form {
+    width: 100%;
+    min-height: 520px;
+  }
 }

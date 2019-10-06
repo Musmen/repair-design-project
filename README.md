@@ -1,5 +1,7 @@
 # repair-design-project
 
+Short instruction, how to install and start this project
+
 Install:
 1. node.js with npm (node package manager)
 
@@ -17,3 +19,9 @@ Install:
 
 1. file-loader
     * npm i file-loader
+
+Start:
+
+1. Compile styles.scss from /src/scss/
+
+1. Run index.html from /dist/
