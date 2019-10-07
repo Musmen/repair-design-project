@@ -1,0 +1,174 @@
+.main {
+  &--presentation {
+    min-height: 705px;
+    
+    outline: 1px solid magenta;
+
+    @media only screen and (max-width: $screen-mobile) {
+      min-height: 476px;
+    }
+  }
+  
+  &--portfolio {
+    min-height: 1075px;
+
+    outline: 1px solid magenta;
+
+    @media only screen and (max-width: $screen-mobile) {
+      min-height: 730px;
+    }
+  }
+
+  &--online_control_feature {
+    position: relative;
+    
+    min-height: 760px;
+    
+    @media only screen and (max-width: $screen-mobile) {
+      position: static;
+      min-height: 825px;
+
+      background-color: $bg_color-dark_theme-mobile;
+    }
+  }
+
+  &--repair_types_feature {
+    min-height: 830px;
+
+    @media only screen and (max-width: $screen-mobile) {
+      min-height: 2030px;
+    }
+  }
+
+  &--measurements_feature {
+    min-height: 875px;
+  }
+
+  &--repair_styles_feature {
+    min-height: 1015px;
+
+    @media only screen and (max-width: $screen-mobile) {
+      position: absolute;
+      top: -220px;
+      right: 0;
+      left: 0;
+      
+      min-height: 340px;
+    }
+  }
+
+  &--design_feature {
+    min-height: 580px;
+
+    @media only screen and (max-width: $screen-mobile) {
+      box-sizing: border-box;
+      min-height: 1960px;
+
+      padding-top: 120px;
+    }
+  }
+
+  &--about_us {
+    min-height: 1615px;
+  }
+
+  &--team {
+    position: relative;
+    top: -410px;
+
+    min-height: 930px;
+
+    @media only screen and (max-width: $screen-mobile) {
+      position: static;
+
+      box-sizing: border-box;
+      min-height: 1710px;
+    }
+  }
+
+  &--clients {
+    position: relative;
+    top: -410px;
+
+    min-height: 595px;
+  }
+
+  &--feed_back {
+    position: absolute;
+    top: - 225px;
+    left: 0;
+    right: 0;
+
+    @media only screen and (max-width: $screen-mobile) {
+      position: static;
+
+      min-height: 520px;
+    }
+  }
+
+  &--contacts {
+    min-height: 950px;
+
+    outline: 1px solid magenta;
+
+    @media only screen and (max-width: $screen-mobile) {
+      min-height: 490px;
+    }
+  }
+}
+
+.presentation {
+  background-image: url('../assets/img/bg-features.png');
+}
+
+.online_control_feature {
+
+  &--overlay_wrapper {
+    position: absolute;
+    top: -325px;
+    left: 0;
+    right: 0;
+    
+    width: 64.8412%; //817px
+    min-height: 530px;
+    margin: 0 auto;
+
+    text-align: center;
+    color: green;
+
+    outline: 1px solid magenta;
+
+    @media only screen and (max-width: $screen-mobile) {
+      position: static;
+
+      width: 100%;
+      min-height: 345px;
+    }
+  }
+}
+
+.feed_back {
+
+  &--form {
+    width: 70.238%; //885px
+    min-height: 445px;
+    margin: 0 auto;
+
+    outline: 1px solid green;
+
+       
+    &-black_bg {
+      background-color: $bg_color-black;
+
+      @media only screen and (max-width: $screen-mobile) {
+        background-color: $bg_color-dark_theme-mobile;
+      }
+    }
+
+    @media only screen and (max-width: $screen-mobile) {
+      width: 100%;
+      min-height: 520px;
+    }
+  }
+
+}

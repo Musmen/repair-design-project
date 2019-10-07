@@ -1,0 +1,12 @@
+.title {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "FuturaDemiC", "Arial", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  color: $contrast_color-dark_theme;
+
+  &--link {
+    display: block;
+    padding: 5px;
+  }
+}

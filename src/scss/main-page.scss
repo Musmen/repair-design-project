@@ -1,0 +1,30 @@
+.main_page {
+  margin: 0;
+  
+  color: red;
+
+  &--header {
+    justify-content: space-between;
+    align-content: center;
+
+    box-sizing: border-box;
+    min-height: 85px;
+    // padding-top: 35px;
+    
+    @media only screen and (max-width: $screen-mobile) {
+      min-height: 57px;
+    }
+  }
+
+  &--title {
+    align-items: center;
+
+    margin: 0;
+  }
+
+  &--footer {
+    min-height: 133px;
+
+    outline: 1px solid magenta;
+  }
+}

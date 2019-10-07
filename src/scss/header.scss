@@ -1,0 +1,16 @@
+.header {
+
+  &--navigation {
+    align-items: center;
+
+    width: 46.43%;
+  }
+
+  &--phone {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 26.19%;//330px;
+  }
+}

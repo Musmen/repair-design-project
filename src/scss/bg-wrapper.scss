@@ -1,0 +1,29 @@
+.bg_wrapper {
+  &-dark_theme {
+    background-color: $bg_color-dark_theme;
+
+    @media only screen and (max-width: $screen-mobile) {
+      background-color: $bg_color-dark_theme-mobile;
+    }
+  }
+
+  &-contacts_bg_image { // todo: bg-image
+    position: relative;
+
+    background-color: $bg_color-dark_theme;
+  }
+
+  &-styles_bg_image {
+
+    @media only screen and (max-width: $screen-mobile) {
+      position: relative; 
+    }
+  }
+
+  &-mobile_dark_theme {
+
+    @media only screen and (max-width: $screen-mobile) {
+      background-color: $bg_color-dark_theme-mobile;
+    }
+  }
+}

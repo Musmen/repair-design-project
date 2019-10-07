@@ -1,0 +1,27 @@
+.phone {
+
+  &--link {
+    border-bottom: 1px solid $contrast_color-dark_theme;
+
+    &:focus,
+    &:hover,
+    &:active {
+      padding: 5px 0;
+
+      border-bottom: none;
+    }
+  }
+
+  &--button {
+    padding: 10px 20px;
+
+    &:focus,
+    &:hover,
+    &:active {
+      color: $link_color-hover-dark_theme;
+      
+      background-color: $link_bg_color-hover-dark_theme;
+      outline-color: $link_bg_color-hover-dark_theme;
+    }
+  }
+}

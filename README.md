@@ -22,6 +22,6 @@ Install:
 
 Start:
 
-1. Compile styles.scss from /src/scss/
+1. Compile styles.scss from /src/scss/  (npm run build)
 
 1. Run index.html from /dist/
