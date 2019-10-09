@@ -1,12 +1,24 @@
+$main-color: #ffffff;
+
+// ***** Bg colors *****
 $bg_color-dark_theme: #131313;
+$bg_color-light_theme: #ffffff;
 $contrast_color-dark_theme: #E3B873;
+$bg_color-black: #000000;
 
 $bg_color-dark_theme-mobile: #252525;
-$bg_color-black: #000000;
 $bg_color-light_theme-mobile: #ffffff;
 
+// ***** Link colors *****
 $link_color-hover-dark_theme: #131313;
 $link_bg_color-hover-dark_theme: #ffffff;
 
+// ***** Screen sizes *****
 $screen-large: 980px;
 $screen-mobile: 600px;
+
+// ***** Text colors *****
+$menu--link-text_color: #ffffff;
+
+$presentation-text_color: #ffffff;
+$presentation-city_name_text_color: #E3B873;

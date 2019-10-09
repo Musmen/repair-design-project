@@ -13,8 +13,8 @@
 }
 
 .link {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   font-family: "FuturaDemiC", "Arial", "Helvetica", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -42,8 +42,10 @@
 }
 
 .button {
-  font-size: 13px;
-  line-height: 15px;
+  padding: 10px 20px;
+
+  font-size: 0.8125rem;
+  line-height: 0.9375rem;
   font-family: "FuturaDemiC", "Arial", "Helvetica", sans-serif;
   text-align: center;
   text-transform: uppercase;
@@ -52,6 +54,19 @@
   border: none;
   border-radius: 3px;
   background-color: $contrast_color-dark_theme;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: $link_color-hover-dark_theme;
+      
+    background-color: $link_bg_color-hover-dark_theme;
+    outline-color: $link_bg_color-hover-dark_theme;
+  }
+}
+
+.paragraph {
+  margin: 0;
 }
 
 .mobile_hidden {

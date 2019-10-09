@@ -1,6 +1,11 @@
 .main {
   &--presentation {
+    align-items: center;
+
+    position: relative;
+
     min-height: 705px;
+    margin-left: 6%; // 82px
     
     outline: 1px solid magenta;
 
@@ -115,10 +120,6 @@
       min-height: 490px;
     }
   }
-}
-
-.presentation {
-  background-image: url('../assets/img/bg-features.png');
 }
 
 .online_control_feature {
