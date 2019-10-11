@@ -1,5 +1,8 @@
 .presentation {
-  // position: relative;
+  position: relative;
+
+  box-sizing: border-box;
+  margin-bottom: 100px;
 
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
               url('../assets/img/bg-features.png');
@@ -13,14 +16,10 @@
   }
 
   &--title {
-    margin: 0;
     margin-bottom: 20px;
-
-    font-weight: normal;
-    font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
+    
     font-size: 2.5rem;
     line-height: 3.3125rem;
-    text-transform: uppercase;
     color: $presentation-text_color;
   }
   
@@ -31,10 +30,8 @@
   &--description {
     margin-bottom: 50px;
 
-    font-family: FuturaBookC;
     font-size: 1.375rem;
     line-height: 1.875rem;
-    color: $presentation-text_color;
   }
 
   &--button {

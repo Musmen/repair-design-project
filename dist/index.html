@@ -14,8 +14,8 @@
   <body class="main_page">
     <div class="bg_wrapper bg_wrapper-dark_theme">
       <header class="header main_page--header centralizer flex">
-        <h1 class="main_page--title title flex">
-          <a class="title--link link" href="#">
+        <h1 class="main_page--logo title flex">
+          <a class="logo--link link" href="#">
             IC "Repair Design Project"
           </a>
         </h1>
@@ -45,7 +45,7 @@
 
         <div class="phone header--phone flex">
           <span class="phone--number">
-            <a class="phone--link link" href="tel:+7 (928) 768-32-93">
+            <a class="phone--link link" href="tel:+7(928)768-32-93">
               +7 (928) 768-32-93
             </a>
           </span>
@@ -61,7 +61,7 @@
       <div class="bg_wrapper bg_wrapper-dark_theme">
         <section class="presentation main--presentation flex">
           <div class="presentation--container">
-            <h2 class="presentation--title">Turnkey Repair in the<br>
+            <h2 class="presentation--title title">Turnkey Repair in the<br>
               city of <span class="presentation--city_name">Rostov-on-Don</span>
             </h2>
             <p class="presentation--description paragraph">
@@ -86,8 +86,82 @@
           </div>
         </section>
 
-        <section class="portfolio main--portfolio centralizer">
-          Completed projects
+        <section class="portfolio main--portfolio flex">
+          
+          <div class="portfolio--left_box">
+            <h2 class="portfolio--title title">Completed<br>projects</h2>
+            <p class="portfolio--description paragraph">
+              Only a small part of the work performed by our company is
+              presented on the site. For 14 years on in the construction
+              market we have made happy more than 1000 families
+            </p>
+            <table class="portfolio--table table">
+              <tbody class="table--body">
+                <tr class="table--row">
+                  <th class="table--th table--th-text_align_left">City:</th>
+                  <th class="table--th">Apartment area:</th>
+                </tr>
+                <tr class="table--row">
+                  <td class="table--td">Rostov-on-Don<br>LCD admiral</td>
+                  <td class="table--td">81 m2</td>
+                </tr>
+                <tr class="table--row">
+                  <th class="table--th">Repair time:</th>
+                  <th class="table--th">Repair Cost:</th>
+                </tr>
+                <tr class="table--row">
+                  <td class="table--td">3.5 months</td>
+                  <td class="table--td">Upon request</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="portfolio--slider slider list flex">
+              <li class="slider--item">
+                <button class="slider--button slider--button-previous"></button>
+              </li>
+              <li class="slider--item">
+                <button class="slider--button slider--button-active"></button>
+              </li>
+              <li class="slider--item">
+                <button class="slider--button"></button>
+              </li>
+              <li class="slider--item">
+                <button class="slider--button"></button>
+              </li>
+              <li class="slider--item">
+                <button class="slider--button slider--button-next"></button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="portfolio--right_box">
+            <ul class="portfolio--menu menu list flex">
+              <li class="menu--item">
+                <a class="menu--link menu--link-active link" href="#">
+                  Rostov-on-Don, Admiral
+                </a>
+              </li>
+              <li class="menu--item">
+                <a class="menu--link link" href="#">
+                  Sochi Thieves
+                </a>
+              </li>
+              <li class="menu--item">
+                <a class="menu--link link" href="#">
+                  Rostov-on-Don Patriotic
+                </a>
+              </li>
+            </ul>
+            <div class="portfolio--gallery_container">
+              <div class="portfolio--gallery">
+                <img class="gallery--image" src="../src/assets/img/portfolio-image_1.jpg" alt="Rostov-on-Don, Admiral Design Photo">
+                <img class="gallery--image" src="../src/assets/img/portfolio-image_2.jpg" alt="Sochi Thieves Design Photo">
+              </div>
+              <button class="gallery--button gallery--button_previous visually_hidden"></button>
+              <button class="gallery--button gallery--button_next"></button>
+            </div>
+          </div>
+
         </section>
       </div>
 
