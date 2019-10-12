@@ -152,12 +152,10 @@
                 </a>
               </li>
             </ul>
-            <div class="portfolio--gallery_container">
-              <div class="portfolio--gallery">
-                <img class="gallery--image" src="../src/assets/img/portfolio-image_1.jpg" alt="Rostov-on-Don, Admiral Design Photo">
-                <img class="gallery--image" src="../src/assets/img/portfolio-image_2.jpg" alt="Sochi Thieves Design Photo">
-              </div>
-              <button class="gallery--button gallery--button_previous visually_hidden"></button>
+            <div class="portfolio--gallery">
+              <img class="gallery--image" src="../src/assets/img/portfolio-image_1.jpg" alt="Rostov-on-Don, Admiral Design Photo">
+              <img class="gallery--image" src="../src/assets/img/portfolio-image_2.jpg" alt="Sochi Thieves Design Photo">
+              <button class="gallery--button gallery--button_previous visually_hidden" tabindex="-1"></button>
               <button class="gallery--button gallery--button_next"></button>
             </div>
           </div>
@@ -166,12 +164,52 @@
       </div>
 
       <div class="bg_wrapper bg_wrapper-light_theme">
-        <div class="bg_wrapper-dark_theme desktop_hidden">
-          <section class="online_control_feature main--online_control_feature centralizer">
-            <div class="overlay_wrapper online_control_feature--overlay_wrapper">
-              Online control
+        <div class="online_control_feature--bg_wrapper">
+          <section class="main--online_control_feature centralizer">
+            <div class="online_control_feature--overlay_wrapper">
+              <h2 class="online_control_feature--title title title-small">
+                Online control
+                <span class="online_control_feature--icon"></span>
+              </h2>
+              <div class="online_control_feature--video-wrapper">
+                <iframe class="online_control_feature--video" width="817" 
+                  src="https://www.youtube.com/embed/wymA9ivx9XY"
+                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+                </iframe>
+              </div>
             </div>
-            At each facility
+            <p class="online_control_feature--description paragraph">
+              At each facility, a camera is installed that broadcasts the progress of work on the clock.
+              At any time, you can go to our website and monitor the progress of work in your apartment.
+              You can watch the live broadcast from one of our facilities!<br>
+              Leave a request below and you will receive a link to the broadcast.
+            </p>
+            <form class="online_control_feature--form form" action="#" method="post" name="broadcast_form">
+              <ul class="form--set list flex">
+                <li class="form--item form--item-name">
+                  <label class="form--label" for="name">Name</label><br>
+                  <input class="form--input input_text" id="name" type="text" name="user-name"
+                    placeholder="What is your name:" minlength="1" maxlength="20"
+                    pattern="([A-Za-zА-Яа-яЁё\s]){1,20}">
+                </li>
+                <li class="form--item form--item-phone">
+                  <label class="form--label" for="phone">Phone</label><br>
+                  <input class="form--input input_text" id="phone" type="tel" name="user-phone"
+                    minlength="6" maxlength="50"
+                    placeholder="Your phone number:" pattern="(\+?\d[- . ( )]*){6,50}">
+                </li>
+                <li class="form--item form--item-checkbox form--item-last_order">
+                  <input class="form--input input_checkbox input_checkbox-checked" id="agree-checkbox"
+                    type="checkbox" name="agree-personal_data" checked required>
+                  <label class="form--label form--checkbox_label" for="agree-checkbox">
+                    I agree to the processing of personal data
+                  </label>
+                </li>
+                <li class="form--item form--item-submit">
+                  <button class="form--submit button" type="submit">submit</button>
+                </li>
+              </ul>
+            </form>
           </section>
         </div>
 

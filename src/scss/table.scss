@@ -1,0 +1,33 @@
+.table {
+
+  border-collapse: collapse;
+
+  &--th {
+    padding-top: 40px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
+    text-align: left;
+    text-transform: uppercase;
+    color: $contrast_color-dark_theme;
+
+    &:not(:first-child) {
+      padding-left: 20%; // 80
+    }
+  }
+
+  &--td {
+    font-family: "FuturaBookC", "Arial", "Helvetica", sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+
+    color: $text-main_color;
+
+    &:not(:first-child) {
+      padding-left: 20%; // 80
+    }
+  }
+}

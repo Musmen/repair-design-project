@@ -7,6 +7,14 @@
     }
   }
 
+  &-light_theme {
+    background-color: $bg_color-light_theme;
+
+    // @media only screen and (max-width: $screen-mobile) {
+    //   background-color: $bg_color-dark_theme-mobile;
+    // }
+  }
+
   &-contacts_bg_image { // todo: bg-image
     position: relative;
 

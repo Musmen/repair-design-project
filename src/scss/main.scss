@@ -15,7 +15,7 @@
   }
   
   &--portfolio {
-    min-height: 1075px;
+    min-height: 975px;
 
     outline: 1px solid magenta;
 
@@ -118,32 +118,6 @@
 
     @media only screen and (max-width: $screen-mobile) {
       min-height: 490px;
-    }
-  }
-}
-
-.online_control_feature {
-
-  &--overlay_wrapper {
-    position: absolute;
-    top: -325px;
-    left: 0;
-    right: 0;
-    
-    width: 64.8412%; //817px
-    min-height: 530px;
-    margin: 0 auto;
-
-    text-align: center;
-    color: green;
-
-    outline: 1px solid magenta;
-
-    @media only screen and (max-width: $screen-mobile) {
-      position: static;
-
-      width: 100%;
-      min-height: 345px;
     }
   }
 }

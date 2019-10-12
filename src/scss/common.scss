@@ -93,6 +93,14 @@
   font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
   text-transform: uppercase;
   color: $contrast_color-dark_theme;
+
+  &-small {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-align: center;
+    color: $text-main_color;
+
+  }
 }
 
 .paragraph {
@@ -102,132 +110,6 @@
   line-height: 1.8125rem;
   font-family: "FuturaBookC", "Arial", "Helvetica", sans-serif;
   color: $presentation-text_color;
-}
-
-.table {
-
-  border-collapse: collapse;
-
-  &--th {
-    padding-top: 40px;
-
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.125rem;
-    line-height: 1.5625rem;
-    font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
-    text-align: left;
-    text-transform: uppercase;
-    color: $contrast_color-dark_theme;
-
-    &:not(:first-child) {
-      padding-left: 20%; // 80
-    }
-  }
-
-  &--td {
-    font-family: "FuturaBookC", "Arial", "Helvetica", sans-serif;
-    font-size: 0.9375rem;
-    line-height: 1.25rem;
-
-    color: $text-main_color;
-
-    &:not(:first-child) {
-      padding-left: 20%; // 80
-    }
-  }
-}
-
-.slider {
-
-  &--button {
-    width: 10px;
-    height: 10px;
-    padding: 0;
-
-    background-color: rgba(255, 255, 255, 0.3);
-    border: 0;
-    border-radius: 50%;
-
-    &-active {
-      background-color: rgba(255, 255, 255, 1);
-    }
-
-    &:focus,
-    &:hover,
-    &:active {
-      background-color: $contrast_color-dark_theme;
-      outline-color: $contrast_color-dark_theme;
-
-      cursor: pointer;
-    }
-
-    &-previous,
-    &-next {
-      width: 41px;
-      min-height: 17px;
-
-      background-color: transparent;
-      background-image: url("../assets/img/portfolio-slider-button.svg");
-      background-repeat: no-repeat;
-      background-position-y: 2px; 
-      border-radius: 0;
-    }
-
-    &-next {
-      transform: rotate(180deg);
-    }
-  }
-}
-
-.gallery {
-  position: relative;
-
-  &--image {
-  position: absolute;
-
-  width: 679px;
-  min-height: 482px;
-  padding-right: 20px;
-
-  background-color: $bg_color-dark_theme;
-
-  z-index: 2;
-  }
-
-  &--image:nth-child(2) {
-    position: absolute;
-    left: 67%;
-    z-index: 1;
-  }
-
-  &--button {
-    position: absolute;
-    top: 267px;
-    right: 3.5%;
-
-    width: 85px;
-    height: 85px;
-    padding: 0;
-
-    background-color: transparent;
-    background-image: url("../assets/img/portfolio-gallery-button.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 0;
-
-    z-index: 3;
-
-    &:focus,
-    &:hover,
-    &:active {
-      background-color: rgba(227, 184, 115, 0.3);
-      outline: 0;
-      border-radius: 50%;
-
-      cursor: pointer;
-    }
-  }
 }
 
 .mobile_hidden {

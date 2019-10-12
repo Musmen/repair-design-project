@@ -1,0 +1,41 @@
+.slider {
+
+  &--button {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 0;
+    border-radius: 50%;
+
+    &-active {
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+      background-color: $contrast_color-dark_theme;
+      outline-color: $contrast_color-dark_theme;
+
+      cursor: pointer;
+    }
+
+    &-previous,
+    &-next {
+      width: 41px;
+      min-height: 17px;
+
+      background-color: transparent;
+      background-image: url("../assets/img/portfolio-slider-button.svg");
+      background-repeat: no-repeat;
+      background-position-y: 2px; 
+      border-radius: 0;
+    }
+
+    &-next {
+      transform: rotate(180deg);
+    }
+  }
+}
