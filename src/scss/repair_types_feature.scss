@@ -1,0 +1,25 @@
+.repair_types_feature {
+
+  &--title {
+    color: $text-title_color-light_theme;
+    padding-top: 20px;
+  }
+
+  &--icon {
+    width: 114px;
+    height: 28px;
+
+    background-image: url("../assets/img/repair_types-title_icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--cards {
+    justify-content: space-between;
+
+    position: relative;
+
+    width: 100%;
+    min-height: 286px;
+    margin: 0 auto;
+  }
+}

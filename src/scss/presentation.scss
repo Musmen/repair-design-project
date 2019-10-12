@@ -40,10 +40,14 @@
     min-height: 50px;
     margin-right: 20px;
     margin-bottom: 20px;
+
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
     
     &-transparent_bg {
       background-color: transparent;
       border: 1px solid $bg_color-light_theme;
+
+      box-shadow: none;
     }
   }
 

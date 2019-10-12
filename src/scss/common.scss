@@ -112,6 +112,12 @@
   color: $presentation-text_color;
 }
 
+.icon {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
 .mobile_hidden {
   @media only screen and (max-width: $screen-mobile) {
     display: none; 

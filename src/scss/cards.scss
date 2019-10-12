@@ -1,0 +1,79 @@
+.cards {
+  margin-top: 30px;
+
+  background-color: transparent;
+  
+  &--item {
+    position: relative;
+
+    width: 392px;
+
+    color: $text-card_item_color;
+  }
+
+  &--img {
+    position: absolute;
+  }
+  
+  &--wrapper {
+    position: relative;
+
+    box-sizing: border-box;
+    width: 330px;
+    margin: 0 auto;
+    margin-top: 295px;
+    padding-top: 22px;
+    padding-left: 36px;
+
+    background-color: $bg_color-light_theme;
+
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+
+    z-index: 2;
+  }
+
+  &--title {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    text-transform: none;
+    color: $text-contrast_color_light_theme;
+  }
+
+  &--services {
+    min-height: 286px;
+    padding: 0;
+    padding-top: 6px;
+    padding-left: 14px;
+
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    font-family: "FuturaBookC", "Arial", "Helvetica", sans-serif;
+
+    .services--item {
+      list-style-type: disc;
+    }
+  }
+
+  &--button {
+    position: absolute;
+    bottom: 27px;
+    left: 0;
+    
+    width: 228px;
+    min-height: 54px;
+    padding: 0;
+
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
+
+    border-radius: 0;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+
+    &:focus,
+    &:hover,
+    &:active {
+      outline: 2px solid $contrast_color-dark_theme;
+    }
+  }
+}
