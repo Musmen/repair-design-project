@@ -1,0 +1,384 @@
+.measurements_feature {
+  justify-content: space-between;
+
+  &--left_box {
+    position: relative;
+
+    width: 55%;
+    min-height: 713px;
+
+    outline: 1px solid red;
+
+    background-image: url("../assets/img/bg-measurements.png");
+    background-repeat: no-repeat;
+    background-position: 0px 18px;
+  }
+
+  .circle {
+    position: relative;
+    top: 73px;
+    left: -157px;
+
+    width: 630px;
+    height: 630px;
+
+    border: 3px solid $contrast_color-dark_theme;
+    border-radius: 50%;
+  }
+
+  &--item {
+    position: absolute;
+
+    width: 47%;
+    margin: 0;
+
+    font-family: "FuturaMediumC", "Arial", "Helvetica", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+
+    color: $text-contrast_color_light_theme;
+
+    &-first {
+      top: 132px;
+      left: 415px;
+
+      &::before {
+        position: absolute;
+        top: -8px;
+        left: -72px;
+        
+        display: block;
+        width: 65px;
+        height: 65px;
+  
+        content: "";
+  
+        background-color: $bg_color-light_theme;
+        border-radius: 50%;
+      }
+  
+      &::after {
+        position: absolute;
+        top: 3px;
+        left: -59px;
+        
+        box-sizing: border-box;
+        display: block;
+        width: 42px;
+        height: 42px;
+        padding-top: 10px;
+  
+        font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
+        text-align: center;
+        color: $text-main_color;
+        content: "01";
+  
+        background-color: $contrast_color-dark_theme;
+        border-radius: 50%;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+      }
+    }
+
+    &-second {
+      top: 252px;
+      left: 489px;
+
+      &::before {
+        position: absolute;
+        top: -15px;
+        left: -74px;
+        
+        display: block;
+        width: 65px;
+        height: 65px;
+  
+        content: "";
+  
+        background-color: $bg_color-light_theme;
+        border-radius: 50%;
+      }
+  
+      &::after {
+        position: absolute;
+        top: -5px;
+        left: -58px;
+        
+        box-sizing: border-box;
+        display: block;
+        width: 42px;
+        height: 42px;
+        padding-top: 10px;
+  
+        font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
+        text-align: center;
+        color: $text-main_color;
+        content: "02";
+  
+        background-color: $contrast_color-dark_theme;
+        border-radius: 50%;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+      }
+    }
+
+    &-third {
+      top: 414px;
+      left: 512px;
+
+      &::before {
+        position: absolute;
+        top: -17px;
+        left: -68px;
+        
+        display: block;
+        width: 65px;
+        height: 65px;
+  
+        content: "";
+  
+        background-color: $bg_color-light_theme;
+        border-radius: 50%;
+      }
+  
+      &::after {
+        position: absolute;
+        top: -6px;
+        left: -57px;
+        
+        box-sizing: border-box;
+        display: block;
+        width: 42px;
+        height: 42px;
+        padding-top: 10px;
+  
+        font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
+        text-align: center;
+        color: $text-main_color;
+        content: "03";
+  
+        background-color: $contrast_color-dark_theme;
+        border-radius: 50%;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+      }
+    }
+
+    &-fourth {
+      top: 564px;
+      left: 446px;
+
+      width: 27%;
+      padding-right: 10px;
+
+      &::before {
+        position: absolute;
+        top: -14px;
+        left: -76px;
+
+        display: block;
+        width: 70px;
+        height: 70px;
+  
+        content: "";
+  
+        background-color: $bg_color-light_theme;
+        border-radius: 50%;
+      }
+  
+      &::after {
+        position: absolute;
+        top: 4px;
+        left: -55px;
+        
+        box-sizing: border-box;
+        display: block;
+        width: 42px;
+        height: 42px;
+        padding-top: 10px;
+  
+        font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
+        text-align: center;
+        color: $text-main_color;
+        content: "04";
+  
+        background-color: $contrast_color-dark_theme;
+        border-radius: 50%;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+      }
+    }
+
+  }
+
+  &--right_box {
+    flex-direction: column;
+
+    position: relative;
+
+    width: 40%;
+    min-height: 713px;
+    margin-right: 6.25%;
+
+    outline: 1px solid red;
+
+    .paragraph {
+      font-size: 1.25rem;
+      line-height: 1.5625rem;
+      font-family: "FuturaDemiC", "Arial", "Helvetica", sans-serif;
+    }
+  }
+
+  &--description {
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 37px;
+
+    text-align: center;
+    color: $text-main_color;
+  }
+
+  &--form {
+    align-self: flex-end;
+
+    width: 90%;
+    margin-top: 124px;
+    margin-right: 10px;
+
+    background-color: $bg_color-dark_theme;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+
+    color: $text-main_color;
+
+    .form--set {
+      flex-direction: column;
+      align-items: center;
+  
+      width: 80%;
+      min-height: 398px;
+      margin: 0 auto;
+    }
+  
+    .form--item {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    
+    .form--item-email {
+      margin-bottom: 22px;
+    }
+
+    .form--item-checkbox {
+      margin-bottom: 32px;
+    }
+
+    .form--item-submit {
+      margin-bottom: 10px;
+    }
+
+    .form--label {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .input_text {
+      width: 100%;
+  
+      color: $text-main_color;
+
+      background-color: transparent;
+      border: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .input_text[placeholder] {
+
+      &::-webkit-input-placeholder {
+        font-size: 1.125rem;
+        line-height: 1.5625rem;
+        font-family: "FuturaMediumC", "Arial", "Helvetica", sans-serif;
+        color: $text-main_color;
+      }
+  
+      &::-moz-placeholder {         
+        font-size: 1.125rem;
+        line-height: 1.5625rem;
+        font-family: "FuturaMediumC", "Arial", "Helvetica", sans-serif;
+        color: $text-main_color;
+      }
+  
+      &:-moz-placeholder {        
+        font-size: 1.125rem;
+        line-height: 1.5625rem;
+        font-family: "FuturaMediumC", "Arial", "Helvetica", sans-serif;
+        color: $text-main_color;
+      }
+  
+      &:-ms-input-placeholder {
+        font-size: 1.125rem;
+        line-height: 1.5625rem;
+        font-family: "FuturaMediumC", "Arial", "Helvetica", sans-serif;
+        color: $text-main_color;
+      }
+
+      &:focus::-webkit-input-placeholder { color: transparent }
+      &:focus::-moz-placeholder          { color: transparent }
+      &:focus:-moz-placeholder           { color: transparent }
+      &:focus:-ms-input-placeholder      { color: transparent }
+    }
+
+    .form--submit {
+      float: right;
+
+      padding-top: 17px;
+      padding-bottom: 17px;
+      padding-left: 45px;
+      padding-right: 45px; 
+
+      font-size: 0.8125rem;
+      line-height: 1.125rem;
+
+      border-radius: 0;
+
+      &:focus,
+      &:hover,
+      &:active {
+        outline: 2px solid $form_outline_color;
+        border: 0;
+      }
+    }
+
+    .input_checkbox {
+  
+      &:focus + .form--checkbox_label::before,
+      &:hover + .form--checkbox_label::before,
+      &:active + .form--checkbox_label::before {
+        outline: 1px solid $text-main_color;
+      }
+    }
+  }
+
+  &--advertisement {
+    position: relative;
+
+    width: 45%;
+    margin: 0;
+    margin-top: 47px;
+    margin-left: 32%;
+
+    color: $contrast_color-dark_theme;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+  
+    &::before {
+      position: absolute;
+      left: -97px;
+      top: -9px;
+
+      display: block;
+      width: 72px;
+      height: 72px;
+
+      content: "";
+
+      border-radius: 50%;
+      background-image: url("../assets/img/measurements-advertisement_icon.svg");
+      background-repeat: no-repeat;
+      box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+    }
+  }
+}

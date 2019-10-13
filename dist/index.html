@@ -197,8 +197,8 @@
                 <li class="form--item form--item-phone">
                   <label class="form--label" for="phone">Phone</label><br>
                   <input class="form--input input_text" id="phone" type="tel" name="user-phone"
-                    minlength="6" maxlength="50"
-                    placeholder="Your phone number:" pattern="(\+?\d[- . ( )]*){6,50}">
+                    placeholder="Your phone number:" minlength="6" maxlength="50"
+                    pattern="(\+?\d[- . ( )]*){6,50}">
                 </li>
                 <li class="form--item form--item-checkbox form--item-last_order">
                   <input class="form--input input_checkbox input_checkbox-checked" id="agree-checkbox"
@@ -239,46 +239,105 @@
               </div>
             </li>
             <li class="cards--item">
-                <img class="cards--img" src="../src/assets/img/repair_types-overhaul_img.jpg"
-                  alt="Overhaul example image">
-                <div class="cards--wrapper">
-                  <h3 class="cards--title title title-smallest">Overhaul</h3>
-                  <ul class="cards--services">
-                    <li class="services--item">Dismantling of old coatings</li>
-                    <li class="services--item">Wallpapering</li>
-                    <li class="services--item">Painting walls and ceilings</li>
-                    <li class="services--item">Laying flooring</li>
-                    <li class="services--item">Replacing plumbing</li>
-                    <li class="services--item">Replacing sockets and switches</li>
-                    <li class="services--item">Replacing doors</li>
-                    <button class="cards--button button">from 1800 rub / m2</button>
-                  </ul>
-                </div>
-              </li>
-              <li class="cards--item">
-                  <img class="cards--img" src="../src/assets/img/repair_types-designer_repair_img.jpg"
-                    alt="Designer repair example image">
-                  <div class="cards--wrapper">
-                    <h3 class="cards--title title title-smallest">Designer Repair</h3>
-                    <ul class="cards--services">
-                      <li class="services--item">Dismantling of old coatings</li>
-                      <li class="services--item">Wallpapering</li>
-                      <li class="services--item">Painting walls and ceilings</li>
-                      <li class="services--item">Laying flooring</li>
-                      <li class="services--item">Replacing plumbing</li>
-                      <li class="services--item">Replacing sockets and switches</li>
-                      <li class="services--item">Replacing doors</li>
-                      <button class="cards--button button">from 4000 rub / m2</button>
-                    </ul>
-                  </div>
-                </li>
+              <img class="cards--img" src="../src/assets/img/repair_types-overhaul_img.jpg"
+                alt="Overhaul example image">
+              <div class="cards--wrapper">
+                <h3 class="cards--title title title-smallest">Overhaul</h3>
+                <ul class="cards--services">
+                  <li class="services--item">Dismantling of old coatings</li>
+                  <li class="services--item">Wallpapering</li>
+                  <li class="services--item">Painting walls and ceilings</li>
+                  <li class="services--item">Laying flooring</li>
+                  <li class="services--item">Replacing plumbing</li>
+                  <li class="services--item">Replacing sockets and switches</li>
+                  <li class="services--item">Replacing doors</li>
+                  <button class="cards--button button">from 1800 rub / m2</button>
+                </ul>
+              </div>
+            </li>
+            <li class="cards--item">
+              <img class="cards--img" src="../src/assets/img/repair_types-designer_repair_img.jpg"
+                alt="Designer repair example image">
+              <div class="cards--wrapper">
+                <h3 class="cards--title title title-smallest">Designer Repair</h3>
+                <ul class="cards--services">
+                  <li class="services--item">Dismantling of old coatings</li>
+                  <li class="services--item">Wallpapering</li>
+                  <li class="services--item">Painting walls and ceilings</li>
+                  <li class="services--item">Laying flooring</li>
+                  <li class="services--item">Replacing plumbing</li>
+                  <li class="services--item">Replacing sockets and switches</li>
+                  <li class="services--item">Replacing doors</li>
+                  <button class="cards--button button">from 4000 rub / m2</button>
+                </ul>
+              </div>
+            </li>
           </ul>
         </section>
       </div>
 
       <div class="bg_wrapper bg_wrapper-measurements_feature_bg_image mobile_hidden">
-        <section class="measurements_feature main--measurements_feature centralizer">
-          Circle measurements_feature
+        <section class="measurements_feature main--measurements_feature flex">
+          <h2 class="visually-hidden">Measurements feature</h2>
+          <div class="measurements_feature--left_box">
+            <div class="circle"></div>
+            <p class="measurements_feature--item measurements_feature--item-first">
+              <!-- <span class="measurements_feature--item_number">01</span> -->
+              Our specialist will arrive for measurements per day contact,
+              or appoint a date convenient for you
+            </p>
+            <p class="measurements_feature--item measurements_feature--item-second">
+              Free metering
+            </p>
+            <p class="measurements_feature--item measurements_feature--item-third">
+              Free consultation
+            </p>
+            <p class="measurements_feature--item measurements_feature--item-fourth">
+              Get a cost estimate and the timing of your future repairs
+            </p>
+          </div>
+
+          <div class="measurements_feature--right_box flex">
+            <form class="measurements_feature--form form" action="#" method="post" name="measurement_form">
+                <p class="measurements_feature--description paragraph">
+                    Leave a request for free<br>departure of the measurer
+                </p>
+                <ul class="form--set list flex">
+                  <li class="form--item form--item-name">
+                    <label class="form--label" for="measurement_name">Name</label><br>
+                    <input class="form--input input_text" id="measurement_name" type="text"
+                      name="measurement_user-name" minlength="1" maxlength="20"
+                      placeholder="What is your name:" pattern="([A-Za-zА-Яа-яЁё\s]){1,20}">
+                  </li>
+                  <li class="form--item form--item-phone">
+                    <label class="form--label" for="measurement_phone">Phone</label><br>
+                    <input class="form--input input_text" id="measurement_phone" type="tel"
+                      name="measurement_user-phone" minlength="6" maxlength="50"
+                      placeholder="Your phone number:" pattern="(\+?\d[- . ( )]*){6,50}">
+                  </li>
+                  <li class="form--item form--item-email">
+                    <label class="form--label" for="measurement_email">Email</label><br>
+                    <input class="form--input input_text" id="measurement_email" type="email"
+                      name="measurement_user-email" minlength="6" maxlength="50"
+                      placeholder="Your email">
+                  </li>
+                  <li class="form--item form--item-checkbox form--item-last_order">
+                    <input class="form--input input_checkbox input_checkbox-checked"
+                      id="measurement_agree-checkbox" type="checkbox"
+                      name="agree-personal_data" checked required>
+                    <label class="form--label form--checkbox_label" for="measurement_agree-checkbox">
+                      I agree to the processing of personal data
+                    </label>
+                  </li>
+                  <li class="form--item form--item-submit">
+                    <button class="form--submit button" type="submit">Call the measurer</button>
+                  </li>
+                </ul>
+            </form>
+            <p class="measurements_feature--advertisement paragraph">
+              Help save 10 - 20% of the cost of materials
+            </p>
+          </div>
         </section>
       </div>
 
