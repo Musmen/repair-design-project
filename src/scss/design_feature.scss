@@ -1,0 +1,67 @@
+.design_feature {
+
+  &--title {
+    color: $text-title_color-light_theme;
+    padding-top: 152px;
+  }
+
+  &--icon {
+    width: 114px;
+    height: 28px;
+
+    background-image: url("../assets/img/design_feature-title_icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--description {
+
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 42px;
+
+    font-size: 1.25rem;
+    line-height: 1.6875rem;
+
+    color: $text-contrast_color_light_theme;
+    text-align: center;
+  }
+
+  &--cards {
+    justify-content: space-between;
+
+    position: relative;
+    top: 6px;
+
+    min-height: 286px;
+    margin: 0 auto;
+  }
+  
+  .cards--img {
+    filter: brightness(0.7);
+  }
+
+  .cards--wrapper {
+    position: absolute;
+    // top: 6px;
+    left: 0;
+    right: 0;
+  }
+
+  .cards--services {
+    min-height: 20px;
+  }
+
+  .services--item:last-of-type {
+    padding-bottom: 58px;
+  }
+
+  .cards--button {
+    bottom: -25px;
+    left: 0;
+
+    padding-left: 34px;
+
+    text-align: left;
+  }
+}

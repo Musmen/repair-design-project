@@ -35,47 +35,57 @@
     font-size: 1.125rem;
     line-height: 1.3125rem;
     font-family: "FuturaMediumC", "Arial", "Helvetica", sans-serif;
-
     color: $text-contrast_color_light_theme;
+
+    &-first,
+    &-second,
+    &-third,
+    &-fourth {
+      &::before {
+        position: absolute;
+
+        display: block;
+        width: 65px;
+        height: 65px;
+
+        content: "";
+
+        background-color: $text-main_color;
+        border-radius: 50%;
+      }
+
+      &::after {
+        position: absolute;
+
+        box-sizing: border-box;
+        display: block;
+        width: 42px;
+        height: 42px;
+        padding-top: 10px;
+
+        font-family: "Yeseva One", serif;
+        text-align: center;
+        color: $text-main_color;
+
+        background-color: $contrast_color-dark_theme;
+        border-radius: 50%;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+      }
+    }
 
     &-first {
       top: 132px;
       left: 415px;
 
       &::before {
-        position: absolute;
         top: -8px;
         left: -72px;
-        
-        display: block;
-        width: 65px;
-        height: 65px;
-  
-        content: "";
-  
-        background-color: $bg_color-light_theme;
-        border-radius: 50%;
       }
-  
+
       &::after {
-        position: absolute;
         top: 3px;
         left: -59px;
-        
-        box-sizing: border-box;
-        display: block;
-        width: 42px;
-        height: 42px;
-        padding-top: 10px;
-  
-        font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
-        text-align: center;
-        color: $text-main_color;
         content: "01";
-  
-        background-color: $contrast_color-dark_theme;
-        border-radius: 50%;
-        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
       }
     }
 
@@ -84,39 +94,14 @@
       left: 489px;
 
       &::before {
-        position: absolute;
         top: -15px;
         left: -74px;
-        
-        display: block;
-        width: 65px;
-        height: 65px;
-  
-        content: "";
-  
-        background-color: $bg_color-light_theme;
-        border-radius: 50%;
       }
-  
+
       &::after {
-        position: absolute;
         top: -5px;
         left: -58px;
-        
-        box-sizing: border-box;
-        display: block;
-        width: 42px;
-        height: 42px;
-        padding-top: 10px;
-  
-        font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
-        text-align: center;
-        color: $text-main_color;
         content: "02";
-  
-        background-color: $contrast_color-dark_theme;
-        border-radius: 50%;
-        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
       }
     }
 
@@ -125,39 +110,14 @@
       left: 512px;
 
       &::before {
-        position: absolute;
         top: -17px;
         left: -68px;
-        
-        display: block;
-        width: 65px;
-        height: 65px;
-  
-        content: "";
-  
-        background-color: $bg_color-light_theme;
-        border-radius: 50%;
       }
-  
+
       &::after {
-        position: absolute;
         top: -6px;
         left: -57px;
-        
-        box-sizing: border-box;
-        display: block;
-        width: 42px;
-        height: 42px;
-        padding-top: 10px;
-  
-        font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
-        text-align: center;
-        color: $text-main_color;
         content: "03";
-  
-        background-color: $contrast_color-dark_theme;
-        border-radius: 50%;
-        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
       }
     }
 
@@ -169,42 +129,19 @@
       padding-right: 10px;
 
       &::before {
-        position: absolute;
         top: -14px;
         left: -76px;
 
-        display: block;
         width: 70px;
         height: 70px;
-  
-        content: "";
-  
-        background-color: $bg_color-light_theme;
-        border-radius: 50%;
       }
-  
+
       &::after {
-        position: absolute;
         top: 4px;
         left: -55px;
-        
-        box-sizing: border-box;
-        display: block;
-        width: 42px;
-        height: 42px;
-        padding-top: 10px;
-  
-        font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
-        text-align: center;
-        color: $text-main_color;
         content: "04";
-  
-        background-color: $contrast_color-dark_theme;
-        border-radius: 50%;
-        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
       }
     }
-
   }
 
   &--right_box {
