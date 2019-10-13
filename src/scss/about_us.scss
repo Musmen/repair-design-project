@@ -1,0 +1,148 @@
+.about_us {
+  padding-top: 412px;
+
+  &--left_box {
+    width: 35%;
+  }
+
+  &--header {
+    font-size: 0.9375rem;
+    line-height: 1.3125rem;
+    font-family: "FuturaDemiC", "Arial", "Helvetica", sans-serif;
+    text-transform: uppercase;
+    color: $text-main_color;
+  }
+
+  &--title {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 53px;
+      left: 212px;
+
+      display: block;
+      width: 92px;
+      height: 1px;
+
+      content: "";
+
+      background-image: url("../assets/img/portfolio-title_line.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--counter {
+    display: inline-block;
+    margin-top: 86px;
+
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    color: $text-main_color;
+  }
+
+  &--title-small {
+    margin: 0;
+    margin-top: 18px;
+
+    font-size: 0.9375rem;
+    line-height: 1.4375rem;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  &--description {
+    width: 85%;
+    margin-top: 9px;
+
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+  }
+
+  &--slider {
+    justify-content: space-between;
+    
+    width: 70%;
+    margin-top: 100px;
+  }
+
+  &--right_box {
+    width: 65%;
+    margin-left: 5%;
+  }
+
+  &--menu {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+    margin-top: 102px;
+
+    .menu--item {
+      margin: 0;
+      margin-bottom: 40px;
+
+      &:nth-child(3n + 1) {
+        justify-self: start;
+      }
+
+      &:nth-child(3n + 2) {
+        justify-self: center;
+      }
+
+      &:nth-child(3n + 3) {
+        justify-self: end;
+      }
+    }
+
+    .menu--link {
+      display: block;
+      padding: 0;
+
+      opacity: 0.3;
+
+      &-active {
+        opacity: 1;
+      }
+
+      &:focus,
+      &:hover,
+      &:active {
+        background-color: transparent;
+        outline: 2px solid $contrast_color-dark_theme;
+
+        opacity: 1;
+      }
+    }
+
+    .link--counter {
+      display: inline-block;
+      margin-bottom: 9px;
+
+      font-size: 0.9375rem;
+      line-height: 1.3125rem;
+      color: #FFFFFF;
+
+      border-bottom: 1px solid $contrast_color-dark_theme;
+    }
+
+    .link--description {
+      display: block;
+      width: 120px;
+
+      font-size: 0.9375rem;
+      line-height: 1.125rem;
+      text-transform: none;
+      color: #FFFFFF;
+    }
+  }
+
+  &--image {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
