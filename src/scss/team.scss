@@ -1,0 +1,131 @@
+.team {
+
+  &--title {
+    padding-top: 2px;
+  }
+
+  &--icon {
+    width: 114px;
+    height: 29px;
+    margin-top: 13px;
+
+    background-image: url("../assets/img/team-title_icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--description {
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 80px;
+
+    font-size: 1.25rem;
+    line-height: 1.6875rem;
+
+    text-align: center;
+
+    &-light_theme {
+      position: relative;
+
+      width: 45%;
+      margin-top: 65px;
+      margin-bottom: 0;
+
+      line-height: 2.125rem;
+      color: $text-contrast_color_light_theme;
+
+      .line_icon {
+        position: relative;
+        top: -12px;
+
+        display: block;
+        width: 55px;
+        height: 2px;
+        margin: 0 auto;
+
+        background-image: url("../assets/img/team-paragraph_line.svg");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &--cards {
+    justify-content: space-evenly;
+
+    position: relative;
+
+    min-height: 414px;
+    margin: 0 auto;
+  }
+
+  .cards--item {
+    width: 272px;
+  }
+  
+  .cards--wrapper {
+    position: relative;
+
+    width: 233px;
+    margin: 0 auto;
+    margin-top: 277px;
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  .cards--title {
+    text-align: center;
+  }
+
+  .cards--profession {
+    margin: 0;
+    margin-top: 2px;
+
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-family: "FuturaBookC", "Arial", "Helvetica", sans-serif;
+    text-align: center;
+  }
+
+  .cards--experience {
+    box-sizing: border-box;
+    min-height: 44px;
+    margin: 0;
+    margin-top: 20px;
+    padding-top: 10px;
+
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: $text-main_color;
+
+    background-color: $contrast_color-dark_theme;
+  }
+
+  .cards--label {
+    position: absolute;
+    top: -35px;
+    left: -35px;
+
+    width: 70px;
+    height: 70px;
+
+    background-color: $contrast_color-dark_theme;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+
+    &-manager {
+      background-image: url("../assets/img/team-card_manager_icon.svg");
+    }
+
+    &-designer {
+      background-image: url("../assets/img/team-card_designer_icon.svg");
+    }
+
+    &-foreman {
+      background-image: url("../assets/img/team-card_foreman_icon.svg");
+    }
+  }
+}
