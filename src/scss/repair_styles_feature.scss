@@ -1,0 +1,75 @@
+.repair_styles_feature {
+  justify-content: flex-start;
+
+  &--left_box {
+    width: 40%;
+  }
+
+  &--title {
+    margin-bottom: 37px;
+    padding-top: 135px;
+  }
+
+  &--item {
+    margin-bottom: 15px;
+  }
+
+  &--link {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    font-family: "Proxima Nova", "Calibri", "Helvetica", sans-serif;
+    text-transform: none;
+    color: $text-main_color;
+
+    &-active {
+      padding-bottom: 2px;
+
+      color: $contrast_color-dark_theme;
+
+      border-bottom: 1px solid  $contrast_color-dark_theme;
+    }
+  }
+
+  &--right_box {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  &--image {
+    position: relative;
+    margin-left: 5%;
+    margin-bottom: 10px;
+
+    &-dining_room {
+      top: -40px;
+
+      width: 354px;
+      height: 557px;
+    }
+
+    &-guests_room {
+      top: -112px;
+
+      width: 354px;
+      height: 275px;
+    }
+
+    &-hall {
+      top: -10px;
+
+      width: 354px;
+      height: 350px;
+    }
+
+    &-living_room {
+      top: -367px;
+
+      width: 354px;
+      height: 625px;
+    }
+  }
+}

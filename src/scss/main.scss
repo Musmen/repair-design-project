@@ -47,10 +47,11 @@
 
   &--measurements_feature {
     min-height: 875px;
+    padding-bottom: 110px;
   }
 
   &--repair_styles_feature {
-    min-height: 1015px;
+    height: 865px;
 
     @media only screen and (max-width: $screen-mobile) {
       position: absolute;
