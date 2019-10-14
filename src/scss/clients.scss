@@ -1,0 +1,137 @@
+.clients {
+
+  &--title {
+    padding-top: 4px;
+
+    color: $text-title_color-light_theme;
+  }
+
+  &--icon {
+    width: 114px;
+    height: 28px;
+    margin-top: 13px;
+
+    background-image: url("../assets/img/clients-title_icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--description {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 48px;
+
+    font-size: 1.25rem;
+    line-height: 1.6875rem;
+    text-align: center;
+    color: $text-contrast_color_light_theme;
+  }
+
+  &--cards {
+    justify-content: space-between;
+
+    margin: 0 auto;
+  }
+
+  .cards--item {
+    width: 376px;
+  }
+  
+  .cards--wrapper {
+    width: 374px;
+    min-height: 427px;
+    margin: 0 auto;
+    padding: 20px 20px 0 20px;
+  }
+
+  .cards--client_name {
+    position: relative;
+
+    padding-left: 100px;
+    padding-bottom: 12px;
+    padding-right: 50px;
+
+    font-size: 1.125rem;
+    line-height: 1.4375rem;
+    font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
+    color: $text-clients_color;
+  }
+
+  .cards--label {
+    position: absolute;
+    top: -15px;
+    left: 0;
+
+    width: 76px;
+    height: 76px;
+
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+    &-Fedosova {
+      background-image: url("../assets/img/clients-card_Fedosova_icon.jpg");
+    }
+
+    &-Afanasyev {
+      background-image: url("../assets/img/clients-card_Afanasyev_icon.jpg");
+    }
+
+    &-Kiriev {
+      background-image: url("../assets/img/clients-card_Kiriev_icon.jpg");
+    }
+  }
+
+  .cards--client_feedback {
+    margin: 0;
+    padding-bottom: 5px;
+
+    font-size: 0.9375rem;
+    line-height: 180%;
+    font-family: "FuturaBookC", "Arial", "Helvetica", sans-serif;
+  }
+  
+  .cards--repair_data {
+    justify-content: space-around;
+
+    position: relative;
+    top: -27px;
+
+    box-sizing: border-box;
+    width: 294px;
+    min-height: 54px;
+    margin: 0;
+
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+    font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
+    text-transform: uppercase;
+    color: $text-main_color;
+
+    background-color: $contrast_color-dark_theme;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+
+    z-index: 3;
+  }
+
+  .cards--repair_square,
+  .cards--repair_time {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .repair_data--icon {
+    width: 33px;
+    height: 32px;
+    margin-right: 20px;
+
+    background-repeat: no-repeat;
+
+    &-square {
+      background-image: url("../assets/img/clients_card-repair_square_icon.svg");
+    }
+
+    &-time {
+      background-image: url("../assets/img/clients_card-repair_time_icon.svg");
+    }
+  }
+}
