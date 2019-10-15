@@ -174,7 +174,7 @@
               <div class="online_control_feature--video-wrapper">
                 <iframe class="online_control_feature--video" width="817" 
                   src="https://www.youtube.com/embed/wymA9ivx9XY"
-                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
                 </iframe>
               </div>
             </div>
@@ -589,7 +589,7 @@
         </section>
       </div>
 
-      <div class="bg_wrapper bg_wrapper-light_theme bg_wrapper-mobile_dark_theme">
+      <div class="bg_wrapper bg_wrapper-light_theme bg_wrapper-mobile_dark_theme bg_wrapper-team_clients">
         <section class="team main--team centralizer">
           <h2 class="team--title title title-small">
             Our team
@@ -738,37 +738,38 @@
       </div>
       
       <div class="bg_wrapper bg_wrapper-contacts_bg_image bg_wrapper-mobile_dark_theme">
-        <section class="feed_back main--feed_back centralizer flex">
-          <form class="feed_back--form feed_back--form-black_bg form" action="#" method="post" name="feedback_form">
-            <p class="feed_back--description title">
+        <section class="feedback main--feedback centralizer flex">
+            <h2 class="visually-hidden">Fedd back</h2>
+          <form class="feedback--form feedback--form-black_bg form" action="#" method="post" name="feedback_form">
+            <p class="feedback--description title">
               Have any questions?
             </p>
             <ul class="form--set list flex">
-              <div class="form--flex_box flex">
-                <li class="form--item form--item-name">
-                  <label class="form--label" for="feed_back_name">Name</label><br>
-                  <input class="form--input input_text" id="feed_back_name" type="text"
-                    name="feed_back_user-name" minlength="1" maxlength="20"
+              <li class="form--flex_box flex">
+                <div class="form--item form--item-name">
+                  <label class="form--label" for="feedback_name">Name</label><br>
+                  <input class="form--input input_text" id="feedback_name" type="text"
+                    name="feedback_user-name" minlength="1" maxlength="20"
                     placeholder="What is your name:" pattern="([A-Za-zА-Яа-яЁё\s]){1,20}">
-                </li>
-                <li class="form--item form--item-phone">
-                  <label class="form--label" for="feed_back_phone">Phone</label><br>
-                  <input class="form--input input_text" id="feed_back_phone" type="tel"
-                    name="feed_back_user-phone" minlength="6" maxlength="50"
+                </div>
+                <div class="form--item form--item-phone">
+                  <label class="form--label" for="feedback_phone">Phone</label><br>
+                  <input class="form--input input_text" id="feedback_phone" type="tel"
+                    name="feedback_user-phone" minlength="6" maxlength="50"
                     placeholder="Your phone number:" pattern="(\+?\d[- . ( )]*){6,50}">
-                </li>
-              </div>
+                </div>
+              </li>
               <li class="form--item form--item-question">
-                <label class="form--label" for="feed_back_question">Question</label><br>
-                <input class="form--input input_text" id="feed_back_question" type="text"
-                  name="feed_back_user-question" minlength="10" maxlength="70"
+                <label class="form--label" for="feedback_question">Question</label><br>
+                <input class="form--input input_text" id="feedback_question" type="text"
+                  name="feedback_user-question" minlength="10" maxlength="70"
                   placeholder="I want to know:">
               </li>
               <li class="form--item form--item-checkbox form--item-last_order">
                 <input class="form--input input_checkbox input_checkbox-checked"
-                  id="feed_back_agree-checkbox" type="checkbox"
+                  id="feedback_agree-checkbox" type="checkbox"
                   name="agree-personal_data" checked required>
-                <label class="form--label form--checkbox_label" for="feed_back_agree-checkbox">
+                <label class="form--label form--checkbox_label" for="feedback_agree-checkbox">
                   I agree to the processing of personal data
                 </label>
               </li>
@@ -780,18 +781,72 @@
         </section>
 
         <section class="contacts main--contacts centralizer">
-          ROSTOV-ON-DON
+          <h2 class="visually-hidden">Contacts</h2>
+          <p class="contacts--description title">
+            Rostov-on-Don, Nansen St., 239 Shopping Center Decorum
+            <a class="contacts--link link" href="tel:+7(928)768-32-93">
+              Tel +7 (928) 768 32 29
+            </a>
+          </p>
+          <ul class="contacts--social flex list">
+            <li class="social--item">
+              <a class="social--link social--link-email link" href="#" aria-label="E-mail"></a>
+            </li>
+            <li class="social--item">
+              <a class="social--link social--link-instagram link" href="#" aria-label="Instagram"></a>
+            </li>
+          </ul>
+          <div class="contacts--map">
+            <img class="map--image" 
+              src="../src/assets/img/contacts-map.png" alt="Rostov-on-Don, Nansen St., 239 Shopping Center Decorum"
+              width="925" height="465">
+          </div>
         </section>
       </div>
     </main>
     
     <div class="bg_wrapper bg_wrapper-dark_theme mobile_hidden">
-      <footer class="footer main_page--footer centralizer">
-        <a class="footer--link" href="#">
-          IC "Repair Design Project"
-        </a>
+      <footer class="footer main_page--footer centralizer flex">
+        <span class="main_page--logo title flex">
+          <a class="footer--link link" href="#">
+            IC "Repair Design Project"
+          </a>
+        </span>
+        <!-- <div class="footer--navigation navigation flex"> -->
+          <ul class="footer--menu list flex">
+            <li class="menu--item">
+              <a class="menu--link menu--link-active link" href="#">Home</a>
+            </li>
+            <li class="menu--item">
+              <a class="menu--link link" href="#">Projects</a>
+            </li>
+            <li class="menu--item">
+              <a class="menu--link link" href="#">Measurement</a>
+            </li>
+            <li class="menu--item">
+              <a class="menu--link link" href="#">Team</a>
+            </li>
+            <li class="menu--item">
+              <a class="menu--link link" href="#">Reviews</a>
+            </li>
+            <li class="menu--item">
+              <a class="menu--link link" href="#">Contacts</a>
+            </li>
+          </ul>
+        <!-- </div> -->
+
+        <div class="phone header--phone flex">
+          <span class="phone--number">
+            <a class="phone--link link" href="tel:+7(928)768-32-93">
+              +7 (928) 768-32-93
+            </a>
+          </span>
+          <button class="phone--button button">
+            Request a call
+          </button>
+        </div>
       </footer>
     </div>
-  </body>
 
+  </body>
 </html>

@@ -18,7 +18,13 @@
   &-contacts_bg_image { // todo: bg-image
     position: relative;
 
+    height: 954px;
+
     background-color: $bg_color-dark_theme;
+    background-image: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%),
+                      url("../assets/img/bg-contacts.png");
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   &-styles_bg_image {
@@ -31,6 +37,10 @@
     @media only screen and (max-width: $screen-mobile) {
       position: relative; 
     }
+  }
+
+  &-team_clients {
+    height: 1523px;
   }
 
   &-mobile_dark_theme {

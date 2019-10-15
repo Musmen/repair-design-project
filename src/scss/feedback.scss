@@ -1,8 +1,5 @@
-.feed_back {
+.feedback {
   justify-content: center;
-
-  position: relative;
-  left: 10px;
 
   &--description {
     margin: 0;
@@ -16,8 +13,6 @@
   }
 
   &--form {
-    margin: 0 auto;
-
     color: $text-main_color;
 
     background-color: $bg_color-dark_theme;
@@ -144,5 +139,4 @@
       }
     }
   }
-
 }

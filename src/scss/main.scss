@@ -99,11 +99,33 @@
     min-height: 595px;
   }
 
-  &--feed_back {
-    position: relative;
-    top: -304px;
-    left: 0;
+  &--feedback {
+    position: absolute;
+    top: -221px;
+    left: 20px;
     right: 0;
+
+    .feedback--form {
+      width: 71%; //885px
+      min-height: 445px;
+      margin: 0 auto;
+  
+      outline: 1px solid green;
+  
+         
+      &-black_bg {
+        background-color: $bg_color-black;
+  
+        @media only screen and (max-width: $screen-mobile) {
+          background-color: $bg_color-dark_theme-mobile;
+        }
+      }
+  
+      @media only screen and (max-width: $screen-mobile) {
+        width: 100%;
+        min-height: 520px;
+      }
+    }
 
     @media only screen and (max-width: $screen-mobile) {
       position: static;
@@ -113,7 +135,7 @@
   }
 
   &--contacts {
-    min-height: 950px;
+    min-height: 954px;
 
     outline: 1px solid magenta;
 
@@ -121,30 +143,4 @@
       min-height: 490px;
     }
   }
-}
-
-.feed_back {
-
-  &--form {
-    width: 71%; //885px
-    min-height: 445px;
-    // margin: 0 auto;
-
-    outline: 1px solid green;
-
-       
-    &-black_bg {
-      background-color: $bg_color-black;
-
-      @media only screen and (max-width: $screen-mobile) {
-        background-color: $bg_color-dark_theme-mobile;
-      }
-    }
-
-    @media only screen and (max-width: $screen-mobile) {
-      width: 100%;
-      min-height: 520px;
-    }
-  }
-
 }
