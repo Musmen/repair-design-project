@@ -177,11 +177,11 @@
     width: 90%;
     margin-top: 124px;
     margin-right: 10px;
+    
+    color: $text-main_color;
 
     background-color: $bg_color-dark_theme;
     box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
-
-    color: $text-main_color;
 
     .form--set {
       flex-direction: column;

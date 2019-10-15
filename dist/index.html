@@ -738,9 +738,44 @@
       </div>
       
       <div class="bg_wrapper bg_wrapper-contacts_bg_image bg_wrapper-mobile_dark_theme">
-        <section class="feed_back main--feed_back centralizer">
-          <form class="form feed_back--form feed_back--form-black_bg">
-            Have any questions?
+        <section class="feed_back main--feed_back centralizer flex">
+          <form class="feed_back--form feed_back--form-black_bg form" action="#" method="post" name="feedback_form">
+            <p class="feed_back--description title">
+              Have any questions?
+            </p>
+            <ul class="form--set list flex">
+              <div class="form--flex_box flex">
+                <li class="form--item form--item-name">
+                  <label class="form--label" for="feed_back_name">Name</label><br>
+                  <input class="form--input input_text" id="feed_back_name" type="text"
+                    name="feed_back_user-name" minlength="1" maxlength="20"
+                    placeholder="What is your name:" pattern="([A-Za-zА-Яа-яЁё\s]){1,20}">
+                </li>
+                <li class="form--item form--item-phone">
+                  <label class="form--label" for="feed_back_phone">Phone</label><br>
+                  <input class="form--input input_text" id="feed_back_phone" type="tel"
+                    name="feed_back_user-phone" minlength="6" maxlength="50"
+                    placeholder="Your phone number:" pattern="(\+?\d[- . ( )]*){6,50}">
+                </li>
+              </div>
+              <li class="form--item form--item-question">
+                <label class="form--label" for="feed_back_question">Question</label><br>
+                <input class="form--input input_text" id="feed_back_question" type="text"
+                  name="feed_back_user-question" minlength="10" maxlength="70"
+                  placeholder="I want to know:">
+              </li>
+              <li class="form--item form--item-checkbox form--item-last_order">
+                <input class="form--input input_checkbox input_checkbox-checked"
+                  id="feed_back_agree-checkbox" type="checkbox"
+                  name="agree-personal_data" checked required>
+                <label class="form--label form--checkbox_label" for="feed_back_agree-checkbox">
+                  I agree to the processing of personal data
+                </label>
+              </li>
+              <li class="form--item form--item-submit">
+                <button class="form--submit button" type="submit">Submit</button>
+              </li>
+            </ul>
           </form>
         </section>
 

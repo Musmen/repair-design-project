@@ -1,0 +1,148 @@
+.feed_back {
+  justify-content: center;
+
+  position: relative;
+  left: 10px;
+
+  &--description {
+    margin: 0;
+    margin-top: 31px;
+    margin-bottom: 39px;
+
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-align: center;
+    color: $text-main_color;
+  }
+
+  &--form {
+    margin: 0 auto;
+
+    color: $text-main_color;
+
+    background-color: $bg_color-dark_theme;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+
+    .form--set {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-wrap: wrap;
+
+      width: 60%;
+      min-height: 312px;
+      margin: 0 auto;
+    }
+
+    .form--flex_box {
+      justify-content: space-between;
+    }
+  
+    .form--item-name {
+      width: 43%;
+    }
+
+    .form--item-phone {
+      width: 45%;
+      margin-left: 0px;
+    }
+
+    .form--item-checkbox {
+      width: 100%;
+
+      text-align: center;
+    }
+
+    .form--item-submit {
+      text-align: center;
+    }
+
+    .form--label {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .input_text {
+      width: 100%;
+      padding-bottom: 7px;
+  
+      color: $text-main_color;
+
+      background-color: transparent;
+      border: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .input_text[placeholder] {
+
+      &::-webkit-input-placeholder {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        font-family: "FuturaBookC", "Arial", "Helvetica", sans-serif;
+        color: $text-main_color;
+      }
+  
+      &::-moz-placeholder {         
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        font-family: "FuturaBookC", "Arial", "Helvetica", sans-serif;
+        color: $text-main_color;
+      }
+  
+      &:-moz-placeholder {        
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        font-family: "FuturaBookC", "Arial", "Helvetica", sans-serif;
+        color: $text-main_color;
+      }
+  
+      &:-ms-input-placeholder {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        font-family: "FuturaBookC", "Arial", "Helvetica", sans-serif;
+        color: $text-main_color;
+      }
+
+      &:focus::-webkit-input-placeholder { color: transparent }
+      &:focus::-moz-placeholder          { color: transparent }
+      &:focus:-moz-placeholder           { color: transparent }
+      &:focus:-ms-input-placeholder      { color: transparent }
+    }
+
+    .input_checkbox {
+
+      &:checked + .form--checkbox_label::before {
+        background-image: url("../assets/img/form-checkbox_checked.svg");
+        background-repeat: no-repeat;
+      }
+  
+      &:focus + .form--checkbox_label::before,
+      &:hover + .form--checkbox_label::before,
+      &:active + .form--checkbox_label::before {
+        outline: 1px solid $text-main_color;
+      }
+    }
+
+    .form--checkbox_label {
+
+      &::before {
+        top: 1px;
+      }
+    }
+
+    .form--submit {
+      width: 38%;
+      min-height: 51px;
+      padding: 0;
+
+      border-radius: 0;
+
+      &:focus,
+      &:hover,
+      &:active {
+        outline: 2px solid $form_outline_color;
+        border: 0;
+      }
+    }
+  }
+
+}
