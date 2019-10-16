@@ -7,7 +7,7 @@
     min-height: 705px;
     margin-left: 6%; // 82px
     
-    outline: 1px solid magenta;
+    // outline: 1px solid magenta;
 
     @media only screen and (max-width: $screen-mobile) {
       min-height: 476px;
@@ -17,7 +17,7 @@
   &--portfolio {
     min-height: 975px;
 
-    outline: 1px solid magenta;
+    // outline: 1px solid magenta;
 
     @media only screen and (max-width: $screen-mobile) {
       min-height: 730px;
@@ -48,6 +48,8 @@
   &--measurements_feature {
     min-height: 875px;
     padding-bottom: 110px;
+
+    background-color: $bg_color-light_theme;
   }
 
   &--repair_styles_feature {
@@ -110,7 +112,7 @@
       min-height: 445px;
       margin: 0 auto;
   
-      outline: 1px solid green;
+      // outline: 1px solid green;
   
          
       &-black_bg {
@@ -137,7 +139,7 @@
   &--contacts {
     min-height: 954px;
 
-    outline: 1px solid magenta;
+    // outline: 1px solid magenta;
 
     @media only screen and (max-width: $screen-mobile) {
       min-height: 490px;

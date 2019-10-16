@@ -1,7 +1,7 @@
 .repair_types_feature {
 
   &--title {
-    padding-top: 20px;
+    padding-top: 16px;
     
     color: $text-title_color-light_theme;
   }
@@ -9,6 +9,7 @@
   &--icon {
     width: 114px;
     height: 28px;
+    padding-top: 4px;
 
     background-image: url("../assets/img/repair_types-title_icon.svg");
     background-repeat: no-repeat;

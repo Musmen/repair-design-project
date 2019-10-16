@@ -1,4 +1,5 @@
 .bg_wrapper {
+  
   &-dark_theme {
     background-color: $bg_color-dark_theme;
 
@@ -15,7 +16,7 @@
     // }
   }
 
-  &-contacts_bg_image { // todo: bg-image
+  &-contacts_bg_image {
     position: relative;
 
     height: 954px;
