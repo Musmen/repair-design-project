@@ -2,17 +2,25 @@
   margin-top: 30px;
 
   background-color: transparent;
-  
+
   &--item {
     position: relative;
 
     width: 392px;
 
     color: $text-card_item_color;
+
+    @media only screen and (max-width: $screen-mobile) {
+      width: 340px;
+    }
   }
 
   &--img {
     position: absolute;
+
+    @media only screen and (max-width: $screen-mobile) {
+      width: 340px;
+    }
   }
   
   &--wrapper {
@@ -75,5 +83,9 @@
     &:active {
       outline: 2px solid $contrast_color-dark_theme;
     }
+  }
+
+  @media only screen and (max-width: $screen-mobile) {
+    flex-direction: column;
   }
 }

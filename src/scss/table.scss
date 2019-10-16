@@ -17,6 +17,17 @@
     &:not(:first-child) {
       padding-left: 20%; // 80
     }
+
+    @media only screen and (max-width: $screen-mobile) {
+      padding-top: 40px;
+
+      font-size: 0.875rem;
+      line-height: 138.6%;
+
+      &:not(:first-child) {
+        padding-left: 11%; // 80
+      }
+    }
   }
 
   &--td {
@@ -28,6 +39,17 @@
 
     &:not(:first-child) {
       padding-left: 20%; // 80
+    }
+
+    @media only screen and (max-width: $screen-mobile) {
+      padding-top: 5px;
+
+      font-size: 0.875rem;
+      line-height: 135.84%;
+
+      &:not(:first-child) {
+        padding-left: 11%; // 80
+      }
     }
   }
 }

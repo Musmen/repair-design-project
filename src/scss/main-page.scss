@@ -1,7 +1,6 @@
 .main_page {
-  margin: 0;
 
-  background-color: transparent;
+  margin: 0;
 
   &--header {
     justify-content: space-between;
@@ -23,7 +22,6 @@
 
   &--footer {
     min-height: 133px;
-
-    // outline: 1px solid magenta;
   }
+
 }

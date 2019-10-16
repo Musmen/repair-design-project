@@ -1,4 +1,5 @@
 .header {
+
   justify-content: space-between;
   align-items: center;
 
@@ -15,5 +16,11 @@
     flex-wrap: wrap;
 
     width: 26.19%;//330px;
+
+    @media only screen and (max-width: $screen-mobile) {
+      justify-content: flex-end;
+      width: 40%;
+    }
   }
+  
 }

@@ -37,6 +37,10 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     align-content: flex-start;
+
+    @media only screen and (max-width: $screen-mobile) {
+      display: none;
+    }
   }
 
   &--image {

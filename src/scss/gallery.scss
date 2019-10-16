@@ -11,12 +11,29 @@
   background-color: $bg_color-dark_theme;
 
   z-index: 2;
+
+    @media only screen and (max-width: $screen-mobile) {
+      position: static;
+
+      width: 340px;
+      min-height: 242px;
+      margin: 0 auto;
+      padding: 0;
+
+      box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    }
   }
 
   &--image:nth-child(2) {
     position: absolute;
     left: 67%;
     z-index: 1;
+
+    @media only screen and (max-width: $screen-mobile) {
+      position: static;
+
+      display: block;
+    }
   }
 
   &--button {
@@ -46,6 +63,26 @@
       outline: 0;
 
       cursor: pointer;
+    }
+
+    @media only screen and (max-width: $screen-mobile) {
+      top: calc(50% - 36px / 2);
+      right: 8%;
+
+      width: 36px;
+      height: 36px;
+
+      box-shadow: none;
+    }
+
+    &-previous {
+      transform: rotate(180deg);
+
+      left: 5.5%;
+
+      @media only screen and (max-width: $screen-mobile) {
+        left: 8%;
+      }
     }
   }
 }
