@@ -1,8 +1,17 @@
 .design_feature {
 
   &--title {
-    color: $text-title_color-light_theme;
     padding-top: 152px;
+
+    color: $text-title_color-light_theme;
+
+    @media only screen and (max-width: $screen-mobile) {
+      padding-top: 50px;
+      
+      font-size: 1.3755rem;
+      line-height: 138.6%;
+      color: $text-main_color;
+    }
   }
 
   &--icon {
@@ -11,6 +20,10 @@
 
     background-image: url("../assets/img/design_feature-title_icon.svg");
     background-repeat: no-repeat;
+
+    @media only screen and (max-width: $screen-mobile) {
+      margin-top: 15px;
+    }
   }
 
   &--description {
@@ -25,6 +38,16 @@
 
     color: $text-contrast_color_light_theme;
     text-align: center;
+
+    @media only screen and (max-width: $screen-mobile) {
+      width: 85%;
+      margin-bottom: 32px;
+
+
+      font-size: 0.9375rem;
+      line-height: 135.84%;
+      color: $text-main_color;
+    }
   }
 
   &--cards {
@@ -35,24 +58,73 @@
 
     min-height: 286px;
     margin: 0 auto;
+
+    @media only screen and (max-width: $screen-mobile) {
+      flex-direction: column;
+    }
+  }
+
+  .cards--item {
+    @media only screen and (max-width: $screen-mobile) {
+      margin-bottom: 80px;
+    }
   }
   
   .cards--img {
     filter: brightness(0.7);
+
+    @media only screen and (max-width: $screen-mobile) {
+      filter: none;
+    }
   }
 
   .cards--wrapper {
     position: absolute;
     left: 0;
     right: 0;
+
+    @media only screen and (max-width: $screen-mobile) {
+      position: relative;
+
+      width: 270px;
+      min-height: 177px;
+      margin: 0;
+      margin-top: 223px;
+      padding-top: 17px;
+      padding-left: 31px;
+      padding-bottom: 41px;
+
+      box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  .cards--title {
+    @media only screen and (max-width: $screen-mobile) {
+      font-size: 0.9375rem;
+      line-height: 138.6%;
+    }
   }
 
   .cards--services {
     min-height: 20px;
+  
+    @media only screen and (max-width: $screen-mobile) {
+      max-height: 154px;
+      margin-top: 3px;
+
+      font-size: 0.8125rem;
+      line-height: 1.375rem;
+      overflow: auto;
+      text-overflow: ellipsis;
+    }
   }
 
   .services--item:last-of-type {
     padding-bottom: 58px;
+
+    @media only screen and (max-width: $screen-mobile) {
+      padding-bottom: 0;
+    }
   }
 
   .cards--button {
@@ -62,5 +134,20 @@
     padding-left: 34px;
 
     text-align: left;
+
+    @media only screen and (max-width: $screen-mobile) {
+      position: absolute;
+      bottom: -20px;
+      
+      width: 190.5px;
+      min-height: 40px;
+      padding-left: 0;
+
+      font-size: 0.9375rem;
+      line-height: 138.6%;
+      text-align: center;
+
+      box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    }
   }
 }
