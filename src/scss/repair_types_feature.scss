@@ -4,6 +4,13 @@
     padding-top: 16px;
     
     color: $text-title_color-light_theme;
+
+    @media only screen and (max-width: $screen-mobile) {
+      padding-top: 81px;
+
+      font-size: 1.375rem;
+      line-height: 138.6%;
+    }
   }
 
   &--icon {
@@ -13,6 +20,10 @@
 
     background-image: url("../assets/img/repair_types-title_icon.svg");
     background-repeat: no-repeat;
+
+    @media only screen and (max-width: $screen-mobile) {
+      margin-top: 15px;
+    }
   }
 
   &--cards {
@@ -25,4 +36,62 @@
     margin: 0 auto;
   }
 
+  .cards {
+    @media only screen and (max-width: $screen-mobile) {
+      flex-direction: column;
+
+      margin-top: 36px;
+    }
+  }
+
+  .cards--item {
+    @media only screen and (max-width: $screen-mobile) {
+      margin-bottom: 79px;
+    }
+  }
+
+  .cards--wrapper {
+    @media only screen and (max-width: $screen-mobile) {
+      width: 270px;
+      height: 241px;
+      margin: 0;
+      margin-top: 223px;
+      padding-top: 20px;
+      padding-left: 30px;
+
+      box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  .cards--title {
+    @media only screen and (max-width: $screen-mobile) {
+      font-size: 0.9375rem;
+      line-height: 138.6%;
+    }
+  }
+
+  .cards--services {
+    @media only screen and (max-width: $screen-mobile) {
+      padding-bottom: 2px;
+
+      font-size: 0.8125rem;
+      line-height: 1.375rem;
+    }
+  }
+
+  .cards--button {
+    @media only screen and (max-width: $screen-mobile) {
+      position: absolute;
+      bottom: -20px;
+      
+      width: 190.5px;
+      min-height: 40px;
+
+      font-size: 0.9375rem;
+      line-height: 138.6%;
+      font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
+
+      box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    }
+  }
 }
