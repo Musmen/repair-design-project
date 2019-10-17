@@ -3,11 +3,42 @@
 
   &--left_box {
     width: 40%;
+
+    @media only screen and (max-width: $screen-mobile) {
+      width: 100%;
+    }
   }
 
   &--title {
     margin-bottom: 37px;
     padding-top: 135px;
+
+    @media only screen and (max-width: $screen-mobile) {
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 31px;
+      padding-top: 8px;
+
+      font-size: 1.375rem;
+      line-height: 138.6%;
+      text-align: center;
+    }
+  }
+
+  &--gallery {
+    position: relative;
+
+    .gallery--button {
+      box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+    }
+
+    .gallery--button-previous {
+      left: 4%;
+    }
+
+    .gallery--button-next {
+      right: 4%;
+    }
   }
 
   &--item {
@@ -37,10 +68,6 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     align-content: flex-start;
-
-    @media only screen and (max-width: $screen-mobile) {
-      display: none;
-    }
   }
 
   &--image {

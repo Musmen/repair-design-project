@@ -367,7 +367,17 @@
           <h2 class="visually-hidden">Repair styles</h2>
           <div class="repair_styles_feature--left_box">
             <p class="repair_styles_feature--title title">We realize your wildest fantasies</p>
-            <ul class="repair_styles_feature--list list">
+            <div class="repair_styles_feature--gallery desktop_hidden">
+              <picture class="gallery--image">
+                <source media="(max-width: 600px)" 
+                  srcset="../src/assets/img/repair_styles_feature-American_classic_image-mobile.jpg">
+                <img src="../src/assets/img/repair_styles_feature-American_classic_image-mobile.jpg"
+                  alt="American classic repair style photo">
+              </picture>
+              <button class="gallery--button gallery--button-previous"></button>
+              <button class="gallery--button gallery--button-next"></button>
+            </div>
+            <ul class="repair_styles_feature--list list mobile_hidden">
               <li class="repair_styles_feature--item">
                 <a class="repair_styles_feature--link repair_styles_feature--link-active link" href="#">
                   American classic
@@ -425,7 +435,7 @@
               </li>
             </ul>
           </div>
-          <div class="repair_styles_feature--right_box flex">
+          <div class="repair_styles_feature--right_box flex mobile_hidden">
             <img class="repair_styles_feature--image  repair_styles_feature--image-dining_room"
               src="../src/assets/img/styles-american-dining_room.jpg" alt="American classic dining room photo">
             <img class="repair_styles_feature--image  repair_styles_feature--image-guests_room"
