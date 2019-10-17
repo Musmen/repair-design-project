@@ -41,24 +41,40 @@
       font-size: 1.125rem;
       line-height: 1.5rem;
       color: $text-placeholder_color;
+
+      @media only screen and (max-width: $screen-mobile) {
+        color: $text-main_color;
+      }
     }
 
     &::-moz-placeholder {         
       font-size: 1.125rem;
       line-height: 1.5rem;
       color: $text-placeholder_color;
+
+      @media only screen and (max-width: $screen-mobile) {
+        color: $text-main_color;
+      }
     }
 
     &:-moz-placeholder {        
       font-size: 1.125rem;
       line-height: 1.5rem;
       color: $text-placeholder_color;
+
+      @media only screen and (max-width: $screen-mobile) {
+        color: $text-main_color;
+      }
     }
 
     &:-ms-input-placeholder {
       font-size: 1.125rem;
       line-height: 1.5rem;
       color: $text-placeholder_color;
+
+      @media only screen and (max-width: $screen-mobile) {
+        color: $text-main_color;
+      }
     }
 
     &:focus::-webkit-input-placeholder { color: transparent }
@@ -81,6 +97,10 @@
       border: 2px solid $form_outline_color;
       border-radius: 5px;
       outline: 0;
+
+      @media only screen and (max-width: $screen-mobile) {
+        border-radius: 0;
+      }
     }
   }
 
@@ -128,6 +148,10 @@
     &:hover + .form--checkbox_label::before,
     &:active + .form--checkbox_label::before {
       outline: 1px solid $text-form_color;
+
+      @media only screen and (max-width: $screen-mobile) {
+        outline: 1px solid $text-main_color;
+      }
     }
   }
 

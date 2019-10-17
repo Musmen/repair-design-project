@@ -6,7 +6,7 @@
     position: relative;
 
     min-height: 705px;
-    margin-left: 6%; // 82px
+    margin-left: 6%;
     
     @media only screen and (max-width: $screen-mobile) {
       align-items: flex-start;
@@ -20,7 +20,7 @@
     min-height: 975px;
 
     @media only screen and (max-width: $screen-mobile) {
-      min-height: 730px;
+      min-height: 726px;
     }
   }
 
@@ -31,7 +31,7 @@
     
     @media only screen and (max-width: $screen-mobile) {
       position: static;
-      min-height: 825px;
+      min-height: 827px;
 
       background-color: $bg_color-dark_theme-mobile;
     }
@@ -108,7 +108,7 @@
     right: 0;
 
     .feedback--form {
-      width: 71%; //885px
+      width: 71%;
       min-height: 445px;
       margin: 0 auto;
   

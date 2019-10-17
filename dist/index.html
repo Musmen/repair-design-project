@@ -204,7 +204,8 @@
                     pattern="([A-Za-zА-Яа-яЁё\s]){1,20}">
                 </li>
                 <li class="form--item form--item-phone">
-                  <label class="form--label" for="phone">Phone</label><br>
+                  <label class="form--label mobile_hidden" for="phone">Phone</label>
+                  <label class="form--label desktop_hidden" for="phone">Number</label><br>
                   <input class="form--input input_text" id="phone" type="tel" name="user-phone"
                     placeholder="Your phone number:" minlength="6" maxlength="50"
                     pattern="(\+?\d[- . ( )]*){6,50}">
@@ -810,7 +811,6 @@
           <div class="contacts--map">
             <img class="map--image" 
               src="../src/assets/img/contacts-map.png" alt="Rostov-on-Don, Nansen St., 239 Shopping Center Decorum">
-              <!-- width="925" height="465"> -->
           </div>
         </section>
       </div>

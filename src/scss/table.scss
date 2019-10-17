@@ -15,7 +15,7 @@
     color: $contrast_color-dark_theme;
 
     &:not(:first-child) {
-      padding-left: 20%; // 80
+      padding-left: 20%;
     }
 
     @media only screen and (max-width: $screen-mobile) {
@@ -25,7 +25,7 @@
       line-height: 138.6%;
 
       &:not(:first-child) {
-        padding-left: 11%; // 80
+        padding-left: 11%;
       }
     }
   }
@@ -38,7 +38,7 @@
     color: $text-main_color;
 
     &:not(:first-child) {
-      padding-left: 20%; // 80
+      padding-left: 20%;
     }
 
     @media only screen and (max-width: $screen-mobile) {
@@ -48,7 +48,7 @@
       line-height: 135.84%;
 
       &:not(:first-child) {
-        padding-left: 11%; // 80
+        padding-left: 11%;
       }
     }
   }
