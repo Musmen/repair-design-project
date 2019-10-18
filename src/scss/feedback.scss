@@ -1,6 +1,10 @@
 .feedback {
   justify-content: center;
 
+  @media only screen and (max-width: $screen-mobile) {
+    padding-top: 153px;
+  }
+
   &--description {
     margin: 0;
     margin-top: 31px;

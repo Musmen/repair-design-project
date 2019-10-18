@@ -26,6 +26,10 @@
                       url("../assets/img/bg-contacts.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media only screen and (max-width: $screen-mobile) {
+      z-index: -1; 
+    }
   }
 
   &-styles_bg_image {

@@ -2,6 +2,12 @@
 
   &--title {
     padding-top: 2px;
+
+    @media only screen and (max-width: $screen-mobile) {
+      font-size: 1.3755rem;
+      line-height: 138.6%;
+      color: $text-main_color;
+    }
   }
 
   &--icon {
@@ -11,6 +17,10 @@
 
     background-image: url("../assets/img/team-title_icon.svg");
     background-repeat: no-repeat;
+
+    @media only screen and (max-width: $screen-mobile) {
+      margin-top: 10px;
+    }
   }
 
   &--description {
@@ -46,6 +56,16 @@
         background-repeat: no-repeat;
       }
     }
+
+    @media only screen and (max-width: $screen-mobile) {
+      width: 100%;
+      margin-bottom: 82px;
+
+
+      font-size: 0.9375rem;
+      line-height: 135.84%;
+      color: $text-main_color;
+    }
   }
 
   &--cards {
@@ -55,10 +75,27 @@
 
     min-height: 414px;
     margin: 0 auto;
+
+    @media only screen and (max-width: $screen-mobile) {
+      flex-direction: column;
+    }
   }
 
   .cards--item {
     width: 272px;
+
+    @media only screen and (max-width: $screen-mobile) {
+      width: 304px;
+      margin: 0 auto;
+      margin-bottom: 89px;
+      padding-left: 32px;
+    }
+  }
+
+  .cards--img {
+    @media only screen and (max-width: $screen-mobile) {
+      width: 304px;
+    }
   }
   
   .cards--wrapper {
@@ -67,10 +104,19 @@
     margin-top: 277px;
     padding: 0;
     padding-top: 20px;
+
+    @media only screen and (max-width: $screen-mobile) {
+      position: relative;
+      left: -4px;
+    }
   }
 
   .cards--title {
     text-align: center;
+
+    @media only screen and (max-width: $screen-mobile) {
+     color: $text-form_color;
+    }
   }
 
   .cards--profession {
@@ -112,6 +158,10 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+
+    @media only screen and (max-width: $screen-mobile) {
+      left: -2px;
+     }
 
     &-manager {
       background-image: url("../assets/img/team-card_manager_icon.svg");

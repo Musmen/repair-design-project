@@ -84,8 +84,4 @@
       outline: 2px solid $contrast_color-dark_theme;
     }
   }
-
-  @media only screen and (max-width: $screen-mobile) { // todo:!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    flex-direction: column;
-  }
 }
