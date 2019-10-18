@@ -96,7 +96,7 @@
     align-items: center;
 
     position: absolute;
-    left: -127px;
+    left: -10%;
     bottom: 55%;
 
     width: 175px;
@@ -107,10 +107,6 @@
     color: $contrast_color-dark_theme;
 
     transform: rotate(90deg);
-
-    // @media only screen and (max-width: $screen-mobile) {
-    //   display: none;
-    // }
   }
 
   &--social_link_line {
@@ -131,7 +127,7 @@
 
     position: absolute;
     bottom: -50px;
-    left: -84px;
+    left: -6.5%;
 
     width: 250px;
     min-height: 100px;
@@ -143,10 +139,6 @@
 
     background-color: $bg_color-dark_theme;
     border-radius: 0;
-
-    // @media only screen and (max-width: $screen-mobile) {
-    //   display: none;
-    // }
   }
 
   &--scroll_down_icon {
