@@ -1,5 +1,13 @@
 .contacts {
 
+  @media only screen and (max-width: $screen-mobile) {
+    background-color: $bg_color-dark_theme-mobile;
+  }
+
+  &--flex_wrapper {
+    flex-direction: column;
+  }
+
   &--description {
     width: 50%;
     margin: 0 auto;
@@ -8,10 +16,25 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
     text-align: center;
+
+    @media only screen and (max-width: $screen-mobile) {
+      width: 100%;
+      padding-top: 41px;
+
+      font-size: 1.125rem;
+      line-height: 138.6%;
+    }
   }
 
   &--link {
     font: inherit;
+
+    @media only screen and (max-width: $screen-mobile) {
+      display: block; 
+      width: 100%;
+
+      text-align: center;
+    }
   }
 
   &--social {
@@ -28,6 +51,13 @@
       background-repeat: no-repeat;
       background-position: center center;
       border-radius: 50%;
+
+      @media only screen and (max-width: $screen-mobile) {
+        width: 39px;
+        height: 39px;
+
+        background-size: 60%
+      }
 
       &-email {
         margin-right: 15px;
@@ -48,22 +78,28 @@
     }
   }
 
-    &--map {
+  &--map {
 
-      .map--image {
-        display: block;
-        width: 925px;
-        height: 465px;
-        margin: 0 auto;
-        padding: 0;
-        padding-top: 39px;
+    .map--image {
+      display: block;
+      width: 925px;
+      height: 465px;
+      margin: 0 auto;
+      padding: 0;
+      padding-top: 39px;
 
-        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
 
-        @media only screen and (max-width: $screen-mobile) {
-          width: 340px;
-          height: 255px;
-        }
+      @media only screen and (max-width: $screen-mobile) {
+        width: 340px;
+        height: 255px;
+        
+        padding-top: 47px;
       }
     }
+
+    @media only screen and (max-width: $screen-mobile) {
+      order: -1;
+    }
+  }
 }

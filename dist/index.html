@@ -840,23 +840,29 @@
 
         <section class="contacts main--contacts centralizer">
           <h2 class="visually-hidden">Contacts</h2>
-          <p class="contacts--description title">
-            Rostov-on-Don, Nansen St., 239 Shopping Center Decorum
-            <a class="contacts--link link" href="tel:+7(928)768-32-93">
-              Tel +7 (928) 768 32 29
-            </a>
-          </p>
-          <ul class="contacts--social flex list">
-            <li class="social--item">
-              <a class="social--link social--link-email link" href="#" aria-label="E-mail"></a>
-            </li>
-            <li class="social--item">
-              <a class="social--link social--link-instagram link" href="#" aria-label="Instagram"></a>
-            </li>
-          </ul>
-          <div class="contacts--map">
-            <img class="map--image" 
-              src="../src/assets/img/contacts-map.png" alt="Rostov-on-Don, Nansen St., 239 Shopping Center Decorum">
+          <div class="contacts--flex_wrapper flex">
+            <p class="contacts--description title">
+              Rostov-on-Don, Nansen St., 239 Shopping Center Decorum
+              <a class="contacts--link link" href="tel:+7(928)768-32-93">
+                Tel +7 (928) 768 32 29
+              </a>
+            </p>
+            <ul class="contacts--social flex list">
+              <li class="social--item">
+                <a class="social--link social--link-email link" href="#" aria-label="E-mail"></a>
+              </li>
+              <li class="social--item">
+                <a class="social--link social--link-instagram link" href="#" aria-label="Instagram"></a>
+              </li>
+            </ul>
+            <div class="contacts--map">
+              <picture class="map--picture">
+                <source media="(max-width: 600px)" 
+                  srcset="../src/assets/img/contacts-map-mobile.png">
+                <img class="map--image" src="../src/assets/img/contacts-map.png"
+                  alt="Our address: Rostov-on-Don, Nansen St., 239, Shopping Center Decorum">
+              </picture>
+            </div>
           </div>
         </section>
       </div>

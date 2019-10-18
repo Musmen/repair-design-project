@@ -95,6 +95,8 @@
   .cards--img {
     @media only screen and (max-width: $screen-mobile) {
       width: 304px;
+
+      z-index: 2;
     }
   }
   
@@ -161,6 +163,8 @@
 
     @media only screen and (max-width: $screen-mobile) {
       left: -2px;
+
+      z-index: 2;
      }
 
     &-manager {

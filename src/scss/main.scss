@@ -114,10 +114,6 @@
   
       &-black_bg {
         background-color: $bg_color-black;
-  
-        @media only screen and (max-width: $screen-mobile) {
-          background-color: $bg_color-dark_theme-mobile;
-        }
       }
   
       @media only screen and (max-width: $screen-mobile) {

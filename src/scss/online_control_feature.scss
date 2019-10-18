@@ -202,10 +202,6 @@
 
       .form--label {
         color: $text-label_color_mobile;
-
-        &[for="phone"] {
-          content: "number";
-        }
       }
 
       .input_text,
