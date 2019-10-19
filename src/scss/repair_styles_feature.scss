@@ -55,6 +55,11 @@
     text-transform: none;
     color: $text-main_color;
 
+    @media only screen and (max-width: $screen-900px) {
+      font-size: 1.1rem;
+      line-height: 1.8rem;
+    }
+
     &-active {
       padding-bottom: 2px;
 
@@ -68,6 +73,10 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     align-content: flex-start;
+
+    @media only screen and (max-width: $screen-1180px) {
+      justify-content: center;
+    }
   }
 
   &--image {
@@ -87,6 +96,10 @@
 
       width: 354px;
       height: 275px;
+
+      @media only screen and (max-width: $screen-1180px) {
+        display: none;
+      }
     }
 
     &-hall {
@@ -101,6 +114,10 @@
 
       width: 354px;
       height: 625px;
+
+      @media only screen and (max-width: $screen-1180px) {
+        display: none;
+      }
     }
   }
 }

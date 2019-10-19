@@ -15,5 +15,15 @@
 
     width: 26.19%;//330px;
     min-height: 83px;
+
+    @media only screen and (max-width: $screen-1390px) {
+      width: 30%;
+    }
+
+    @media only screen and (max-width: $screen-1180px) {
+      justify-content: center;
+      
+      width: 20%;
+    }
   }
 }

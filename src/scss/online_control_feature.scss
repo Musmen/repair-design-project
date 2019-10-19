@@ -116,6 +116,12 @@
 
   &--form {
     margin-top: 80px;
+
+    @media only screen and (min-width: $screen-mobile) and (max-width: $screen-900px) {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
     
     .form--set {
       flex-wrap: wrap;

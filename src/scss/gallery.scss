@@ -2,18 +2,24 @@
   position: relative;
 
   &--image {
-  position: absolute;
+    position: absolute;
 
-  width: 679px;
-  min-height: 482px;
-  padding-right: 20px;
+    width: 679px;
+    min-height: 482px;
+    padding-right: 20px;
 
-  background-color: $bg_color-dark_theme;
+    background-color: $bg_color-dark_theme;
 
-  z-index: 2;
+    z-index: 2;
+
+    @media only screen and (max-width: $screen-1080px) {
+      position: static;
+
+      width: 90%;
+    }
 
     @media only screen and (max-width: $screen-mobile) {
-      position: static;
+      // position: static;
 
       width: 340px;
       min-height: 242px;
@@ -29,10 +35,33 @@
     left: 67%;
     z-index: 1;
 
+    @media only screen and (max-width: $screen-1080px) {
+      display: none;
+    }
+
     @media only screen and (max-width: $screen-mobile) {
       position: static;
 
       display: block;
+    }
+  }
+
+  &--item {
+    @media only screen and (max-width: $screen-1080px) {
+      display: block;
+      width: 95%;
+      height: auto;
+      margin: 0 auto;
+      margin-top: 10%;
+    }
+
+    @media only screen and (max-width: $screen-900px) {
+      margin-top: 20%;
+    }
+
+    @media only screen and (max-width: $screen-mobile) {
+      width: 100%;
+      margin-top: 0;
     }
   }
 
@@ -65,10 +94,15 @@
       cursor: pointer;
     }
 
+    @media only screen and (max-width: $screen-1080px) {
+      display: none;
+    }
+
     @media only screen and (max-width: $screen-mobile) {
       top: calc(50% - 36px / 2);
       right: 8%;
 
+      display: block;
       width: 36px;
       height: 36px;
 

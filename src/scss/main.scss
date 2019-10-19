@@ -7,12 +7,15 @@
 
     min-height: 705px;
     margin-left: 6%;
+
+    @media only screen and (max-width: $screen-1240px) {
+      margin-left: 0;
+    }
     
     @media only screen and (max-width: $screen-mobile) {
       align-items: flex-start;
 
       min-height: 476px;
-      margin-left: 0;
     }
   }
   
@@ -50,6 +53,12 @@
     padding-bottom: 110px;
 
     background-color: $bg_color-light_theme;
+
+    @media only screen and (max-width: $screen-1080px) {
+      min-height: 600px;
+
+      padding-bottom: 30px;
+    }
   }
 
   &--repair_styles_feature {
@@ -78,6 +87,10 @@
 
   &--about_us {
     min-height: 1615px;
+
+    @media only screen and (max-width: $screen-1390px) {
+      min-height: 1255px;
+    }
   }
 
   &--team {

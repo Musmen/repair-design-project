@@ -13,11 +13,14 @@
       border-bottom: none;
     }
 
-    @media only screen and (max-width: $screen-mobile) {
+    @media only screen and (max-width: $screen-800px) {
       margin-right: 0;
 
       font-size: 0.75rem;
       line-height: 0.875rem;
+    }
+
+    @media only screen and (max-width: $screen-mobile) {
       color: $text-main_color;
 
       border-bottom: 0;
@@ -28,6 +31,10 @@
     padding: 10px 30px;
     
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+
+    @media only screen and (max-width: $screen-1180px) {
+      display: none;
+    }
   }
 
 }

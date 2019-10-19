@@ -48,7 +48,7 @@
       background-image: url("../assets/img/portfolio-title_line.svg");
       background-repeat: no-repeat;
 
-      @media only screen and (max-width: $screen-mobile) {
+      @media only screen and (max-width: $screen-950px) {
         display: none;
       }
     }
@@ -73,8 +73,13 @@
     @media only screen and (max-width: $screen-mobile) {
       width: 91%;
       margin: 0 auto;
+      margin-top: 50px;
       position: relative;
       top: 272px;
+    }
+
+    @media only screen and (max-width: $screen-500px) {
+      margin-top: 0;
     }
   }
 
@@ -91,11 +96,23 @@
       line-height: 1.1875rem;
       font-family: "Yeseva One", "Georgia", "Lucida Bright", serif;
       color: rgba(255, 255, 255, 0.3);
+
+      @media only screen and (max-width: $screen-1080px) {
+        display: block;
+
+        font-size: 0.775rem;
+        line-height: 1.175rem;
+        text-align: center;
+      }
       
       &-active {
         color: $contrast_color-dark_theme;
   
         border-bottom: 1px solid $contrast_color-dark_theme;
+
+        @media only screen and (max-width: $screen-1080px) {
+          border-bottom: 1px solid transparent;
+        }
       }
 
       &:focus,
@@ -111,12 +128,25 @@
     
     width: 50%;
     margin-top: 90px;
+
+    @media only screen and (max-width: $screen-1180px) {
+      margin-top: 30px;
+    }
+
+    @media only screen and (max-width: $screen-1080px) {
+      display: none;
+    }
+
   }
 
   &--right_box {
     position: relative;
 
     width: 60%;
+
+    @media only screen and (max-width: $screen-1180px) {
+      width: 80%;
+    }
 
     @media only screen and (max-width: $screen-mobile) {
       position: static;
@@ -129,6 +159,10 @@
     justify-content: left;
 
     margin-bottom: 50px;
+
+    @media only screen and (max-width: $screen-1080px) {
+      margin-bottom: 0;
+    }
   }
 
   &--gallery {

@@ -107,6 +107,10 @@
     color: $contrast_color-dark_theme;
 
     transform: rotate(90deg);
+
+    @media only screen and (max-width: $screen-1240px) {
+      display: none;
+    }
   }
 
   &--social_link_line {
@@ -139,6 +143,10 @@
 
     background-color: $bg_color-dark_theme;
     border-radius: 0;
+
+    @media only screen and (max-width: $screen-1240px) {
+      left: 0;
+    }
   }
 
   &--scroll_down_icon {

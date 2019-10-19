@@ -125,7 +125,7 @@
 }
 
 .desktop_hidden {
-  @media only screen and (min-width: $screen-mobile) {
+  @media only screen and (min-width: $screen-desktop_to_mobile) {
     display: none;
   }
 }

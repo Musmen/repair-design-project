@@ -14,6 +14,11 @@
     text-transform: uppercase;
     color: $contrast_color-dark_theme;
 
+    @media only screen and (max-width: $screen-900px) {
+      font-size: 1rem;
+      line-height: 1.3rem;
+    }
+
     &:not(:first-child) {
       padding-left: 20%;
     }
@@ -36,6 +41,11 @@
     line-height: 1.25rem;
 
     color: $text-main_color;
+
+    @media only screen and (max-width: $screen-900px) {
+      font-size: 0.8375rem;
+      line-height: 1.025rem;
+    }
 
     &:not(:first-child) {
       padding-left: 20%;

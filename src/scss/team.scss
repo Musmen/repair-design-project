@@ -76,13 +76,20 @@
     min-height: 414px;
     margin: 0 auto;
 
-    @media only screen and (max-width: $screen-mobile) {
+    
+
+    @media only screen and (max-width: $screen-1180px) {
       flex-direction: column;
     }
   }
 
   .cards--item {
     width: 272px;
+
+    @media only screen and (max-width: $screen-1180px) {
+      margin: 0 auto;
+      margin-bottom: 80px;
+    }
 
     @media only screen and (max-width: $screen-mobile) {
       width: 304px;

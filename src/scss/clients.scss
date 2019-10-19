@@ -1,5 +1,9 @@
 .clients {
 
+  @media only screen and (max-width: $screen-1180px) {
+    display: none;
+  }
+
   &--title {
     padding-top: 4px;
 
