@@ -32,7 +32,9 @@
   }
 
   &--cards {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     margin: 0 auto;
   }
@@ -95,12 +97,15 @@
   }
   
   .cards--repair_data {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 
     position: relative;
     top: -27px;
 
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+            box-sizing: border-box;
     width: 294px;
     min-height: 54px;
     margin: 0;
@@ -112,15 +117,19 @@
     color: $text-main_color;
 
     background-color: $contrast_color-dark_theme;
-    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    -webkit-box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+            box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
 
     z-index: 3;
   }
 
   .cards--repair_square,
   .cards--repair_time {
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .repair_data--icon {

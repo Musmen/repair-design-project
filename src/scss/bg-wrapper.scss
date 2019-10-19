@@ -18,6 +18,10 @@
     height: 954px;
 
     background-color: $bg_color-dark_theme;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3.47%, rgba(24, 24, 24, 0.9)), to(rgba(24, 24, 24, 0.72))),
+                      url("../assets/img/bg-contacts.png");
+    background-image: -o-linear-gradient(top, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%),
+                      url("../assets/img/bg-contacts.png");
     background-image: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%),
                       url("../assets/img/bg-contacts.png");
     background-repeat: no-repeat;
@@ -36,6 +40,12 @@
   }
 
   &-styles_bg_image {
+
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))),
+              url('../assets/img/bg-styles.jpg');
+
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('../assets/img/bg-styles.jpg');
 
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
               url('../assets/img/bg-styles.jpg');

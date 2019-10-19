@@ -1,8 +1,16 @@
 .presentation {
   position: relative;
 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+          box-sizing: border-box;
   margin-bottom: 100px;
+
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))),
+              url('../assets/img/bg-presentation.jpg');
+
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('../assets/img/bg-presentation.jpg');
 
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
               url('../assets/img/bg-presentation.jpg');
@@ -11,6 +19,12 @@
 
   @media only screen and (max-width: $screen-mobile) {
     margin-bottom: 0;
+
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))),
+                url('../assets/img/bg-presentation-mobile.jpg');
+
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../assets/img/bg-presentation-mobile.jpg');
 
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                 url('../assets/img/bg-presentation-mobile.jpg');
@@ -60,13 +74,16 @@
   }
 
   &--button {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 205px;
     min-height: 50px;
     margin-right: 20px;
     margin-bottom: 20px;
 
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+
+            box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
 
     @media only screen and (max-width: $screen-mobile) {
       width: 95%;
@@ -76,14 +93,17 @@
       line-height: 0.9375rem;
 
       border-radius: 0;
-      box-shadow: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
     }
     
     &-transparent_bg {
       background-color: transparent;
       border: 1px solid $bg_color-light_theme;
 
-      box-shadow: none;
+      -webkit-box-shadow: none;
+
+              box-shadow: none;
 
       @media only screen and (max-width: $screen-mobile) {
         border-radius: 0;
@@ -92,8 +112,11 @@
   }
 
   &--social_link {
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     position: absolute;
     left: -10%;
@@ -106,7 +129,11 @@
     font-family: "FuturaDemiC", "Arial", "Helvetica", sans-serif;
     color: $contrast_color-dark_theme;
 
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+
+        -ms-transform: rotate(90deg);
+
+            transform: rotate(90deg);
 
     @media only screen and (max-width: $screen-1240px) {
       display: none;
@@ -122,12 +149,20 @@
     background-image: url("../assets/img/presentation-social_link_line.svg");
     background-repeat: no-repeat;
 
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+
+        -ms-transform: rotate(90deg);
+
+            transform: rotate(90deg);
   }
 
   &--scroll_down_button {
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     position: absolute;
     bottom: -50px;

@@ -69,7 +69,9 @@
   }
 
   &--cards {
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 
     position: relative;
 
@@ -79,7 +81,10 @@
     
 
     @media only screen and (max-width: $screen-1180px) {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
   }
 
@@ -139,7 +144,8 @@
   }
 
   .cards--experience {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     min-height: 44px;
     margin: 0;
     margin-top: 20px;
@@ -166,7 +172,8 @@
     background-color: $contrast_color-dark_theme;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+    -webkit-box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+            box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
 
     @media only screen and (max-width: $screen-mobile) {
       left: -2px;
